@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Licensed under the Academic Free License version 3.0
+	- Any copyright dedicated to the public domain -->
+	<head vocab="https://schema.org/DigitalDocument">
+		<link rel="license nofollow schema:license" href="https://spdx.org/licenses/AFL-3.0">
+		<link rel="license nofollow schema:license" href="https://creativecommons.org/publicdomain/zero/1.0/">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Security-Policy" content="base-uri 'self'; form-action 'none'; object-src 'none'; media-src 'self' data:; img-src 'self' data:; child-src blob: https://web.archive.org; style-src 'self' 'unsafe-inline'; connect-src 'self' blob: data:">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title property="headline">Brocade 6520</title>
+		<meta name="description" content="How to factory reset instructions tutorial guide">
+		<link rel="icon" href="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn5K7PC90ZXh0Pjwvc3ZnPg==">
+    <style>
+    :root,h1 {background-color:#CCC}
+    :root {
+      color:#000;
+      background-image:url("data:image/svg+xml;charset=utf-8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiCiAgIHZpZXdCb3g9IjgzNSA0OCAxNDEuMzQxNTMwMDYgMTIiPgogIDxwYXRoCiAgICAgZD0ibSAxMzUuNTc3MzgsNy42Mjc4OCBjIDAuODgxMjUsLTAuNzI2MjUgMS40NDM3NCwtMS44Mjg3NSAxLjQ0Mzc0LC0zLjA1NzUgMCwtMi4xOTI1IC0xLjc3NzUsLTMuOTY1IC0zLjk2NzUsLTMuOTY1IGwgLTE1LjM2MTI0LDAgYyAzLjkzLDMuOTczNzUgNy42NzUsNi4wMTI1IDEwLjYwNSw3LjAyMjUgLTIuOTMsMS4wMDYyNSAtNi42NzUsMy4wNSAtMTAuNjA1LDcuMDIyNSBsIDE1LjM2MTI0LDAgYyAyLjE5LDAgMy45Njc1LC0xLjc3MjUgMy45Njc1LC0zLjk2MjUgMCwtMS4yMzEyNSAtMC41NjI1LC0yLjMzMzc1IC0xLjQ0Mzc0LC0zLjA2IG0gLTIuNzIwMDEsNC44Nzg3NSAtOS4xOTM3NSwwIGMgMy41MDUsLTIuNDQ3NSA2LjUxNjI1LC0zLjYzODc1IDkuMTkzNzUsLTMuNjM4NzUgMSwwIDEuODEzNzUsMC44MTYyNSAxLjgxMzc1LDEuODIgMCwxLjAwMjUgLTAuODEzNzQsMS44MTg3NSAtMS44MTM3NSwxLjgxODc1IG0gMCwtNi4xMiBjIC0yLjY3NzUsMCAtNS42ODg3NSwtMS4xOSAtOS4xOTM3NSwtMy42MzM3NSBsIDkuMTkzNzUsMCBjIDEsMCAxLjgxMzc1LDAuODE1IDEuODEzNzUsMS44MTc1IDAsMS4wMDEyNSAtMC44MTM3NCwxLjgxNjI1IC0xLjgxMzc1LDEuODE2MjUiCiAgICAgc3R5bGU9ImZpbGw6I2ZmMDAwMDtmaWxsLW9wYWNpdHk6MC4xO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lO3RyYW5zZm9ybTpzY2FsZSg3LjEpIiAvPgo8L3N2Zz4K");
+      background-repeat:no-repeat;
+      background-size:100vw 100vh;
+      background-attachment:fixed;
+    }
+    h1 {position:sticky;top:0;width:fit-content;text-decoration:dashed underline #CCCCCC 8px;padding-right:0.2ex;z-index:1}
+    ol > li {padding-bottom:1em}
+    ol > li::marker {font-weight:bold}
+    h2 {font-variant:small-caps;font-size:large;font-weight:normal;display:inline}
+    blockquote,summary samp{background-color:rgba(0,0,0,0.75);color:#FFF}
+    blockquote > samp {color:#FFF}
+    blockquote {overflow-x:clip;overflow-clip-margin:9vw;padding-left:0.5ex;margin-top:0.5ex;white-space:pre}
+    blockquote span {color:yellow}
+    summary {list-style-image: url("data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyZXgiIGhlaWdodD0iMmV4Ij48c3R5bGU+DQovKiA8IVtDREFUQVsgKi8NCnN2Z3tiYWNrZ3JvdW5kLWltYWdlOnJhZGlhbC1ncmFkaWVudCh3aGl0ZSx3aGl0ZSxyZ2JhKDI1NSwyNTUsMjU1LDApLHJnYmEoMjU1LDI1NSwyNTUsMCkscmdiYSgyNTUsMjU1LDI1NSwwKSl9DQovKiBdXT4gKi8NCjwvc3R5bGU+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJjZW50cmFsIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjJleCI+4piQPC90ZXh0Pg0KPHRleHQgeD0iNjUlIiB5PSIzMyUiIGRvbWluYW50LWJhc2VsaW5lPSJjZW50cmFsIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjIuNWV4IiBmaWxsPSIjMDA3NzAwIj7inJM8L3RleHQ+DQo8L3N2Zz4=")}
+    summary:focus {list-style-image: unset;list-style-type: "\27A4\00A0\00A0";}
+    li:focus-within > details:focus-within ~ details > summary,li:focus-within ~ li summary,ol:not(:focus-within) summary {list-style-image: url("data:image/svg+xml;charset=utf-8;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyZXgiIGhlaWdodD0iMmV4Ij48c3R5bGU+DQovKiA8IVtDREFUQVsgKi8NCnN2Z3tiYWNrZ3JvdW5kLWltYWdlOnJhZGlhbC1ncmFkaWVudCh3aGl0ZSx3aGl0ZSxyZ2JhKDI1NSwyNTUsMjU1LDApLHJnYmEoMjU1LDI1NSwyNTUsMCkscmdiYSgyNTUsMjU1LDI1NSwwKSl9DQovKiBdXT4gKi8NCjwvc3R5bGU+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJjZW50cmFsIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjJleCI+4piQPC90ZXh0Pjwvc3ZnPg==");}
+    summary[tabindex="0"][property$="t"]:hover {list-style-image: unset;list-style-type: "\25A0\00A0\00A0";}
+    li:focus-within > h2 {filter:drop-shadow(0.09ex 0.09ex 0.12ex);text-decoration:white 1px underline;animation: 0.5s infinite alternate underpulse}
+    details[open] > summary:active {pointer-events:none}
+    summary:focus::marker,summary:hover::marker {animation: 0.5s infinite alternate pulsate}
+    @keyframes pulsate {
+      from {color:#008;}
+      to {color:#FFF;}
+    }
+    @keyframes underpulse {
+      from {text-decoration-style:solid;}
+      25% {text-decoration-style:solid;}
+      to {text-decoration-style:dotted;}
+    }
+    </style>
+</head>
+<body><main vocab="http://schema.org/" typeof="HowTo">
+	<h1 property="name">Brocade 6520</h1>
+<ol>
+  <li typeof="HowToSection" property="step"><h2 property="name">Start the console session.</h2>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text" autofocus>Plug in serial cable to device from PC COM1 port</summary>
+    </details>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Open PuTTY and select "Serial" connection type, leave baud rate (Speed) and other settings as default.</summary>
+    </details>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Plug power into device and if a power button exists, turn it on.</summary>
+    </details>
+  </li>
+  <li typeof="HowToSection" property="step"><h2 property="name">Access the commandline.</h2>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Press the <em>Esc</em> key during the countdown to stop autoboot:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+System RAM test using Default POST RAM Test succeeded.
+
+set_bootstatus: BS_LOAD_OS, platform_idx = 10
+Hit ESC to stop autoboot:  0
+        </samp></blockquote>
+    </details>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Type <em>3</em> to "Enter command shell.":</summary>
+        <blockquote role="log" aria-label="example"><samp>
+1) Start system.
+2) Recover password.
+3) Enter command shell.
+
+Option? <span>3</span>
+
+Boot PROM password has not been set.
+        </samp></blockquote>
+    </details>
+  <li typeof="HowToSection" property="step"><h2 property="name">Boot into single user mode.</h2>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Type the <em>setenv</em> command on the <em>OSLoadOptions</em> parameter with the value <em>single</em> at the <samp>=> </samp>&nbsp;prompt:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+> <span>setenv OSLoadOptions single</span>
+        </samp></blockquote>
+    </details>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Type the <em>printenv</em> command and note the <em>OSRootPartition</em> values for step 4:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+> <span>printenv</span>
+AutoLoad=yes
+BootromVerbose=no
+InitTest=MEM()
+LoadIdentifiers=Fabric Operating System;Fabric Operating System
+OSLoadOptions=single
+OSLoader=ATA()0x5ce77;ATA()0x3943e0
+OSRootPartition=hda1;hda2
+        </samp></blockquote>
+    </details>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Type the <em>boot</em> command:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+=> <span>boot</span>
+Map file at LBA sector 0x5ce77
+## Booting image at 00400000 ...
+   Image Name:   Linux-2.6.14.2
+   Image Type:   PowerPC Linux Multi-File Image (gzip compressed)
+        </samp></blockquote>
+    </details>
+  </li>
+  <li typeof="HowToSection" property="step"><h2 property="name">Reset passwords to default and reboot.</h2>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Remount the / partition as read/write:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+INIT: version 2.78 booting
+sh-2.04# <span>mount -o remount,rw,noatime /</span>
+EXT3 FS on hda1, internal journal
+        </samp></blockquote>
+    </details>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Mount the second partition to /mnt obtained from the value of <em>OSRootPartition</em> variable in the printenv output from step 3.</summary>
+        <blockquote role="log" aria-label="example"><samp>
+sh-2.04# <span>mount /dev/hda2 /mnt</span>
+kjournald starting. Commit interval 5 seconds
+EXT3 FS on hda2, internal journal
+EXT3-fs: recovery complete.
+EXT3-fs: mounted filesystem with ordered data mode.
+        </samp></blockquote>
+    </details>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Type the <em>passwddefault</em> command including the full folder path to it:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+sh-2.04# <span>/sbin/passwddefault</span>
+All account passwords have been successfully set to factory default.
+        </samp></blockquote>
+    </details>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Type the <em>bootenv OSLoadOptions "quiet/quiet"</em> command to exit single user mode:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+sh-2.04# <span>bootenv OSLoadOptions "quiet/quiet"</span>
+        </samp></blockquote>
+    </details>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Type the <em>reboot</em> command:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+sh-2.04# <span>reboot -f</span>
+Restarting system.
+        </samp></blockquote>
+    </details>
+  </li>
+  <li typeof="HowToSection" property="step"><h2 property="name">Log in with default credentials</h2>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Type <em>root</em> for the login username and <em>fibranne</em> for the password:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+FCSW2 console login: <span>root</span>
+Password: <span>fibranne</span>
+
+Please change passwords for switch default accounts now.
+Use Control-C to exit or press 'Enter' key to proceed.
+        </samp></blockquote>
+    </details>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Press <em>Ctrl C</em> to skip password setting:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+Password was not changed. Will prompt again at next login
+until password is changed.
+        </samp></blockquote>
+    </details>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Wait for the system to become "active" then type the <em>version</em> and <em>licenseshow</em> commands for your records:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+*******************************************
+Notice: System has changed state to active.
+All active commands are available now.
+*******************************************
+
+FCSW2:root> <span>version</span>
+Kernel:     2.6.14.2
+Fabric OS:  v7.1.0a
+Made on:    Tue Jan 22 19:33:14 2013
+Flash:      Wed Jun 19 15:53:27 2013
+BootProm:   1.0.15
+FCSW2:root> <span>licenseshow</span>
+SeyyccbdQShfzzdJ:
+    Extended Fabric license
+    Fabric Watch license
+    Performance Monitor license
+    Trunking license
+        </samp></blockquote>
+    </details>
+  </li>
+  <li typeof="HowToSection" property="step"><h2 property="name">Erase the configuration and reboot.</h2>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Type the <em>switchdisable</em> command then the <em>configdefault</em> command then the <em>switchenable</em> command followed by the <em>reboot</em> command:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+FCSW2:root> <span>switchdisable</span>
+
+FCSW2:root> <span>configdefault</span>
+Executing configdefault...Please wait
+Already in Native Mode continuing with configDefault
+Committing configuration ... done.
+
+The system has to be rebooted to allow the changes to take effect
+2021/12/22-01:08:36, [CONF-1031], 4588, FID 128, INFO, FCSW2, configDefault 
+completed successfully for switch.
+FCSW2:root> <span>switchenable</span>
+FCSW2:root> <span>reboot</span>
+Warning: This command would cause the switch to reboot
+and result in traffic disruption.
+Are you sure you want to reboot the switch [y/n]?<span>y</span>
+
+Broadcast message from root (ttyS0) Wed Dec 22 01:09:13 2021...
+
+The system is going down for reboot NOW !!
+INIT: Switching to runlevel: 6
+INIT: Sending processes the TERM signal
+    </samp></blockquote>
+    </details>
+  </li>
+  <li typeof="HowToSection" property="step"><h2 property="name">Copy all the output from the session into your records.</h2>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Right-click PuTTY's titlebar, from that dropdown menu click on "Copy All to Clipboard"</summary>
+    </details>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Open the file of record certifying the deconfiguration of this device and use <em>CTRL V</em> to paste all the output from PuTTY into that file. Formatting the text with a fixed-width font helps it look more readable.</summary>
+    </details>
+  </li>
+  <li typeof="HowToSection" property="step"><h2 property="name">End the session.</h2>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Close PuTTy.</summary>
+    </details>
+  </li>
+</ol>
+</main></body></html>

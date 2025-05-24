@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Licensed under the Academic Free License version 3.0
+	- Any copyright dedicated to the public domain -->
+	<head vocab="https://schema.org/DigitalDocument">
+		<link rel="license nofollow schema:license" href="https://spdx.org/licenses/AFL-3.0">
+		<link rel="license nofollow schema:license" href="https://creativecommons.org/publicdomain/zero/1.0/">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Security-Policy" content="base-uri 'self'; form-action 'none'; object-src 'none'; media-src 'self' data:; img-src 'self' data:; child-src blob: https://web.archive.org; style-src 'self' 'unsafe-inline'; connect-src 'self' blob: data:">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title property="headline">Fortinet FortiGate 3240C</title>
+		<meta name="description" content="How to factory reset instructions tutorial guide">
+		<link rel="icon" href="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn5K7PC90ZXh0Pjwvc3ZnPg==">
+    <style>
+    :root,h1 {background-color:#CCC}
+    :root {
+      color:#000;
+      background-image:url("data:image/svg+xml;charset=utf-8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgdmlld0JveD0iMCAwIDI2Ny4xNjExIDMwLjg2MjA4NSIKICAgdmVyc2lvbj0iMS4xIgogICBpZD0ic3ZnMjcyIgogICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxnCiAgICAgaWQ9ImxheWVyMSIKICAgICB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMC40MDk3OTg3OSwtMC4zMzI1MjgxNikiPgogICAgPGcKICAgICAgIGZpbGwtb3BhY2l0eT0iMC4xIgogICAgICAgdHJhbnNmb3JtPSJtYXRyaXgoMS43MzY3NTIxLDAsMCwxLjczNjc1MjEsMC4zOTc2NDE1MywwLjMyNzMxNzkpIj4KICAgICAgPHBhdGgKICAgICAgICAgZD0iTSAxMDAuNSwxNy42IEggOTYuMjM0IFYgMC4xOSBsIDEzLjcyLDAuMDExMyBjIDAsMCAyLjUxMiwtMC4wOTM3IDQuMTEsMS40ODUgMCwwIDEuNjMxLDEuMzYyIDEuNjMxLDQuNjkxIHYgMTEuMjIgaCAtNC4yNTUgdiAtMTEuNTEgYyAwLDAgMC4wNTI1LC0xLjE3NCAtMC4zNDc1LC0xLjU4NiAwLDAgLTAuMzUzNywtMC40NDc1IC0xLjAyNiwtMC40NDc1IGggLTkuNTc3IGwgMC4wMDksMTMuNTQgeiBtIDE4LjE2LC0wLjAwMyBWIDEuMjk3IDAuMjAzIGggMTcuMTIgViA0LjA3MiBMIDEyMi45LDQuMDcxIHYgMi45NTggaCA4Ljk0OCB2IDMuNzM2IEggMTIyLjkgdiAyLjk2OCBoIDEyLjk2IHYgMy44NyBoIC0xNy4yMSB6IG0gLTI5Ljg2LDAgViAxLjI5NyAwLjIwMyBoIDQuMjQ4IHYgMTcuNCBIIDg4LjggWiBNIDE0Mi45OSwyLjk3NyBWIDIuMzkwOCBaIG0gLTEuMDk1LDE0LjYyIFYgNC4wNjcgaCAtNC4wMSBWIDAuMTk4IGggMTUuOTUgdiAzLjg2OSBoIC03LjY4OSB2IDEzLjUzIGggLTQuMjQ4IHogTSA3NS44NjUsMi45NzcgViAyLjM5MDggWiBNIDc0Ljc3LDE3LjU5NyBWIDQuMDY3IEggNzAuNzYgViAwLjE5OCBoIDE1Ljk1IHYgMy44NjkgaCAtNy42ODkgdiAxMy41MyBIIDc0Ljc3MyBaIE0gNjEuOTYsNy4wMTcgYyAxLjAzOCwtMC4wMDggMS42NTksMTBlLTQgMS45MDksLTAuMTUxMiAwLDAgMC40MzYyLC0wLjI0MTIgMC40NDEyLC0wLjc1ODggbCAwLjAwMSwtMS4xMzggQyA2NC4zMTEyLDQuNDQ5IDYzLjg3LDQuMjEwMiA2My44Nyw0LjIxMDIgNjMuNTM4OCw0LjAzMDIgNjIuOTc3NSw0LjA2NCA2MS42NDUsNC4wNjI3IGggLTguMjc2IHYgMi45NTQgaCA4Ljc4MSAtMC4xOSB6IG0gMi4yODksMTAuNTggdiAtNS45MzggYyAwLC0wLjUzMzggLTAuNDQ2MiwtMC43NTc1IC0wLjQ0NjIsLTAuNzU3NSAtMC4yMDEyLC0wLjEyNSAtMC44MDM4LC0wLjE0NzUgLTEuNjkxLC0wLjE0NzUgaCAwLjIwNjIgLTguOTQ5IHYgNi44NDIgSCA0OS4xMjEgViAxLjI5NiAwLjIwMiBoIDEzLjI2IGMgMi4yOSwwLjAwNyAzLjg3MSwwLjM0MzggNC45NiwxLjQwMSAxLjA3LDEuMDkgMS4yMTIsMi41MTYgMS4yMTgsNCB2IDEuMjM5IGMgMC4wMTM4LDEuMjYxIC0wLjY0ODgsMi40MTEgLTEuNDM5LDMuMDgxIGwgMC4xNTg4LDAuMDc4OCBjIDAuMzIyNSwwLjE1NjIgMC40OTg4LDAuMzc3NSAwLjQ5ODgsMC4zNzc1IDAuNjAxMiwwLjc2NzUgMC41OTM4LDEuNDI4IDAuNTkyNSwyLjI0IHYgNC45ODEgaCAtNC4xMjEgeiBNIDAuMDA5LDAuMTk3IHYgMS4wOTUgMTYuMyBoIDQuMjQ4IHYgLTYuODM2IGggMTIuODcgViA3LjAxOCBIIDQuMjU3IFYgNC4wNjIgaCAxNC45NiBWIDAuMTkzIEggMC4wMDcgWiIKICAgICAgICAgc3R5bGU9ImZpbGw6IzIzMWYyMCIKICAgICAgICAgaWQ9InBhdGg0IiAvPgogICAgICA8cGF0aAogICAgICAgICBkPSJtIDQzLjI4LDE3Ljc3IGMgMS4zOCwtMC40Njg4IDIuNDU0LC0yLjA1OCAyLjcxMiwtNC4wNTYgdiAtMC41Nzc1IGggLTcuMDc1IHYgNC42MzQgaCA0LjM2MiB6IE0gNDUuOTkzLDQuNjQgViA0LjExNzUgYyAtMC4yNzEyLC0yLjA4NSAtMS40MjUsLTMuNzI4IC0yLjg5NiwtNC4xMTQgaCAtNC4xNzkgdiA0LjYzNiBoIDcuMDc1IHogbSAtMjQuOSw4LjQ5NyB2IDAuNTcyNSBjIDAuMjU2MiwyIDEuMzMsMy41OTIgMi43MTQsNC4wNjEgaCA0LjM0IHYgLTQuNjM0IGggLTcuMDU0IHogbSAyLjg5NSwtMTMuMTMgYyAtMS40NjksMC4zODYyIC0yLjYyNiwyLjAzIC0yLjg5NSw0LjExOCB2IDAuNTE4OCBoIDcuMDU0IHYgLTQuNjM2IGggLTQuMTU5IHogbSAyMi4wMSw2LjU2NiBoIC03LjA3NSB2IDQuNjM2IGggNy4wNzUgeiBtIC0xNS45MiwxMS4yIGggNi45MjEgdiAtNC42MzQgaCAtNi45MjEgeiBtIDYuOTIxLC0xNy43NyBoIC02LjkyMSB2IDQuNjM2IGggNi45MjEgeiBtIC0xNS45LDExLjIgaCA3LjA1NCBWIDYuNTY3IGggLTcuMDU0IHoiCiAgICAgICAgIHN0eWxlPSJmaWxsOiNlZTJlMjQiCiAgICAgICAgIGlkPSJwYXRoNiIgLz4KICAgIDwvZz4KICA8L2c+Cjwvc3ZnPgo=");
+      background-repeat:no-repeat;
+      background-size:100vw 100vh;
+      background-attachment:fixed;
+    }
+    h1 {position:sticky;top:0;width:fit-content;text-decoration:dashed underline #CCCCCC 8px;padding-right:0.2ex;z-index:1}
+    ol > li {padding-bottom:1em}
+    ol > li::marker {font-weight:bold}
+    h2 {font-variant:small-caps;font-size:large;font-weight:normal;display:inline}
+    blockquote,summary samp{background-color:rgba(0,0,0,0.75);color:#FFF}
+    blockquote > samp {color:#FFF}
+    blockquote {overflow-x:clip;overflow-clip-margin:9vw;padding-left:0.5ex;margin-top:0.5ex;white-space:pre}
+    blockquote span {color:yellow}
+    summary {list-style-image: url("data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyZXgiIGhlaWdodD0iMmV4Ij48c3R5bGU+DQovKiA8IVtDREFUQVsgKi8NCnN2Z3tiYWNrZ3JvdW5kLWltYWdlOnJhZGlhbC1ncmFkaWVudCh3aGl0ZSx3aGl0ZSxyZ2JhKDI1NSwyNTUsMjU1LDApLHJnYmEoMjU1LDI1NSwyNTUsMCkscmdiYSgyNTUsMjU1LDI1NSwwKSl9DQovKiBdXT4gKi8NCjwvc3R5bGU+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJjZW50cmFsIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjJleCI+4piQPC90ZXh0Pg0KPHRleHQgeD0iNjUlIiB5PSIzMyUiIGRvbWluYW50LWJhc2VsaW5lPSJjZW50cmFsIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjIuNWV4IiBmaWxsPSIjMDA3NzAwIj7inJM8L3RleHQ+DQo8L3N2Zz4=")}
+    summary:focus {list-style-image: unset;list-style-type: "\27A4\00A0\00A0";}
+    li:focus-within > details:focus-within ~ details > summary,li:focus-within ~ li summary,ol:not(:focus-within) summary {list-style-image: url("data:image/svg+xml;charset=utf-8;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyZXgiIGhlaWdodD0iMmV4Ij48c3R5bGU+DQovKiA8IVtDREFUQVsgKi8NCnN2Z3tiYWNrZ3JvdW5kLWltYWdlOnJhZGlhbC1ncmFkaWVudCh3aGl0ZSx3aGl0ZSxyZ2JhKDI1NSwyNTUsMjU1LDApLHJnYmEoMjU1LDI1NSwyNTUsMCkscmdiYSgyNTUsMjU1LDI1NSwwKSl9DQovKiBdXT4gKi8NCjwvc3R5bGU+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJjZW50cmFsIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjJleCI+4piQPC90ZXh0Pjwvc3ZnPg==");}
+    summary[tabindex="0"][property$="t"]:hover {list-style-image: unset;list-style-type: "\25A0\00A0\00A0";}
+    li:focus-within > h2 {filter:drop-shadow(0.09ex 0.09ex 0.12ex);text-decoration:white 1px underline;animation: 0.5s infinite alternate underpulse}
+    details[open] > summary:active {pointer-events:none}
+    summary:focus::marker,summary:hover::marker {animation: 0.5s infinite alternate pulsate}
+    @keyframes pulsate {
+      from {color:#008;}
+      to {color:#FFF;}
+    }
+    @keyframes underpulse {
+      from {text-decoration-style:solid;}
+      25% {text-decoration-style:solid;}
+      to {text-decoration-style:dotted;}
+    }
+    </style>
+</head>
+<body><main vocab="http://schema.org/" typeof="HowTo">
+	<h1 property="name">Fortinet FortiGate 3240C</h1>
+<ol>
+  <li typeof="HowToSection" property="step"><h2 property="name">Start the console session.</h2>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text" autofocus>Plug in serial cable to console port of device from PC COM1 port</summary>
+    </details>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Open PuTTY and select "Serial" connection type, leave baud rate (Speed) and other settings as default.</summary>
+    </details>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Plug power into device and if a power button exists, turn it on.</summary>
+    </details>
+  </li>
+  <li typeof="HowToSection" property="step"><h2 property="name">Reset Password.</h2>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">At the login prompt type <em>maintainer</em> and type <em>bcpb</em> followed by the Serial Number of the device for the password. You only have 14 seconds to do this:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+FortiGate-3240C (14:46-03.02.2012)
+Ver:04000006
+Serial number:FG3K2C3Z12800216
+RAM activation
+…
+Starting system maintenance...
+Scanning /dev/sdb1... (100%)
+Scanning /dev/sdb3... (100%)
+
+
+PHSTDCDFW02 login: <span>maintainer</span>
+Password: <span>bcpbFG3K2C3Z12800216</span>
+Welcome !
+        </samp></blockquote>
+    </details>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Type the following commands to change the admin account's password to <em>Pa$$w0rd</em> then log out.</summary>
+        <blockquote role="log" aria-label="example"><samp>
+PHSTDCDFW02 (global) # <span>config system admin</span>
+
+PHSTDCDFW02 (admin) # <span>edit admin</span>
+
+PHSTDCDFW02 (admin) # <span>set password Pa$$w0rd</span>
+
+PHSTDCDFW02 (admin) # <span>end</span>
+
+PHSTDCDFW02 (global) # <span>exit</span>
+        </samp></blockquote>
+    </details>
+  </li>
+  <li typeof="HowToSection" property="step"><h2 property="name">Erase configuration.</h2>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Login as admin with <em>Pa$$w0rd</em> as the password:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+PHSTDCDFW02 login: <span>admin</span>
+Password: <span>Pa$$w0rd</span>
+Welcome !
+        </samp></blockquote>
+    </details>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Type <em>config global</em> then <em>exec factoryreset</em> and <em>y</em> to confirm:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+PHSTDCDFW02 # <span>config global</span>
+
+PHSTDCDFW02 (global) # <span>exec factoryreset</span>
+This operation will reset the system to factory default!
+Do you want to continue? (y/n)<span>y</span>
+
+
+System is resetting to factory default...
+
+
+The system is going down NOW !!
+
+PHSTDCDFW02 (global) #
+Please stand by while rebooting the system.
+Restarting system.
+        </samp></blockquote>
+    </details>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">There is a backup system with a configuration that also needs erasing.</summary>
+    </details>
+  </li>
+  <li typeof="HowToSection" property="step"><h2 property="name">Load backup system.</h2>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">When prompted press a key for the configuration menu:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+Press any key to display configuration menu...
+.
+[G]:  Get firmware image from TFTP server.
+[F]:  Format boot device.
+[B]:  Boot with backup firmware and set as default.
+[I]:  Configuration and information.
+[Q]:  Quit menu and continue to boot with default firmware.
+[H]:  Display this list of options.
+
+Enter Selection [G]:
+        </samp></blockquote>
+    </details>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Type <em>b</em> to boot the backup and set it as default:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+Enter G,F,B,I,Q,or H: <span>b</span>
+Loading backup firmware from boot device...
+
+Reading boot image 1483900 bytes.
+Initializing firewall...
+System is starting...
+Starting system maintenance...
+        </samp></blockquote>
+    </details>
+  </li>
+  <li typeof="HowToSection" property="step"><h2 property="name">Erase the backup.</h2>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Repeat steps 2 and 3 on the backup.</summary>
+    </details>
+  </li>
+  <li typeof="HowToSection" property="step"><h2 property="name">Copy all the output from the session into your records.</h2>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Right-click PuTTY's titlebar, from that dropdown menu click on "Copy All to Clipboard"</summary>
+    </details>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Open the file of record certifying the deconfiguration of this device and use <em>CTRL V</em> to paste all the output from PuTTY into that file. Formatting the text with a fixed-width font helps it look more readable.</summary>
+    </details>
+  </li>
+  <li typeof="HowToSection" property="step"><h2 property="name">End the session.</v>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Close PuTTy.</summary>
+    </details>
+  </li>
+</ol>
+</main></body></html>

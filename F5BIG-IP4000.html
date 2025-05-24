@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Licensed under the Academic Free License version 3.0
+	- Any copyright dedicated to the public domain -->
+	<head vocab="https://schema.org/DigitalDocument">
+		<link rel="license nofollow schema:license" href="https://spdx.org/licenses/AFL-3.0">
+		<link rel="license nofollow schema:license" href="https://creativecommons.org/publicdomain/zero/1.0/">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Security-Policy" content="base-uri 'self'; form-action 'none'; object-src 'none'; media-src 'self' data:; img-src 'self' data:; child-src blob: https://web.archive.org; style-src 'self' 'unsafe-inline'; connect-src 'self' blob: data:">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title property="headline">F5 BIG-IP 4000 SERIES</title>
+		<meta name="description" content="How to factory reset instructions tutorial guide">
+		<link rel="icon" href="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn5K7PC90ZXh0Pjwvc3ZnPg==">
+    <style>
+    :root,h1 {background-color:#CCC}
+    :root {
+      color:#000;
+      background-image:url("data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSItMTkwOTkgLTUwNTkuNjkzIDQxLjA3IDQwIj4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xLCAuY2xzLTIgewogICAgICAgIGZpbGw6IG5vbmU7CiAgICAgIH0KCiAgICAgIC5jbHMtMSB7CiAgICAgICAgY2xpcC1ydWxlOiBldmVub2RkOwogICAgICB9CgogICAgICAuY2xzLTMgewogICAgICAgIGNsaXAtcGF0aDogdXJsKCNjbGlwLXBhdGgpOwogICAgICB9CgogICAgICAuY2xzLTQgewogICAgICAgIGNsaXAtcGF0aDogdXJsKCNjbGlwLXBhdGgtMik7CiAgICAgIH0KCiAgICAgIC5jbHMtNSB7CiAgICAgICAgZmlsbDogI2U3MWIyYTsKICAgICAgfQoKICAgICAgLmNscy02IHsKICAgICAgICBjbGlwLXBhdGg6IHVybCgjY2xpcC1wYXRoLTMpOwogICAgICB9CgogICAgICAuY2xzLTcgewogICAgICAgIGNsaXAtcGF0aDogdXJsKCNjbGlwLXBhdGgtNSk7CiAgICAgIH0KCiAgICAgIC5jbHMtOCB7CiAgICAgICAgY2xpcC1wYXRoOiB1cmwoI2NsaXAtcGF0aC02KTsKICAgICAgfQoKICAgICAgLmNscy05IHsKICAgICAgICBjbGlwLXBhdGg6IHVybCgjY2xpcC1wYXRoLTcpOwogICAgICB9CgogICAgICAuY2xzLTEwIHsKICAgICAgICBjbGlwLXBhdGg6IHVybCgjY2xpcC1wYXRoLTgpOwogICAgICB9CgogICAgICAuY2xzLTExIHsKICAgICAgICBmaWxsOiAjZmZmOwogICAgICB9CgogICAgICAuY2xzLTEyIHsKICAgICAgICBjbGlwLXBhdGg6IHVybCgjY2xpcC1wYXRoLTEwKTsKICAgICAgfQoKICAgICAgLmNscy0xMyB7CiAgICAgICAgY2xpcC1wYXRoOiB1cmwoI2NsaXAtcGF0aC0xMik7CiAgICAgIH0KCiAgICAgIC5jbHMtMTQgewogICAgICAgIGZpbGw6ICNlMjE2M2Q7CiAgICAgIH0KICAgICAgW2NsYXNzXj0iY2xzLSJdewogICAgICAgIGZpbGwtb3BhY2l0eTowLjE7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgICA8Y2xpcFBhdGggaWQ9ImNsaXAtcGF0aCI+CiAgICA8L2NsaXBQYXRoPgogICAgPGNsaXBQYXRoIGlkPSJjbGlwLXBhdGgtMiI+CiAgICAgIDxwYXRoIGlkPSJQYXRoXzU5IiBkYXRhLW5hbWU9IlBhdGggNTkiIGNsYXNzPSJjbHMtMiIgZD0iTTAtNjcwOUgxOTIwdi0xNDJIMFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgNjg1MSkiLz4KICAgIDwvY2xpcFBhdGg+CiAgICA8Y2xpcFBhdGggaWQ9ImNsaXAtcGF0aC0zIj4KICAgICAgPHBhdGggaWQ9IlBhdGhfNzEiIGRhdGEtbmFtZT0iUGF0aCA3MSIgY2xhc3M9ImNscy0xIiBkPSJNMTc2LTY3NzIuNjkzaDQwdjQwSDE3NloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgNjg1MSkiLz4KICAgIDwvY2xpcFBhdGg+CiAgICA8Y2xpcFBhdGggaWQ9ImNsaXAtcGF0aC01Ij4KICAgICAgPHJlY3QgaWQ9IlJlY3RhbmdsZV80IiBkYXRhLW5hbWU9IlJlY3RhbmdsZSA0IiBjbGFzcz0iY2xzLTIiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTc2IDc4KSIvPgogICAgPC9jbGlwUGF0aD4KICAgIDxjbGlwUGF0aCBpZD0iY2xpcC1wYXRoLTYiPgogICAgICA8cGF0aCBpZD0iUGF0aF82OSIgZGF0YS1uYW1lPSJQYXRoIDY5IiBjbGFzcz0iY2xzLTEiIGQ9Ik0yMTIuNTA3LTY3NjMuOTg2Yy0uMjQ1LDEuMDE0LS4zNzQsMi4wNjMtLjYxLDMuMTM3LTMtLjM4OS02LjUyNC0uNjc0LTEwLjQ4Mi0uODEzLS4zMTgsMS0uNjE4LDEuOTg3LS45NjIsMy4wNjEsNi42MjIuNDA2LDkuODQxLDIuMTUxLDExLjc0OSw0LjIwOWE4LjY0OCw4LjY0OCwwLDAsMSwyLjE0Myw2LjUxMSw5LjQ2Niw5LjQ2NiwwLDAsMS0zLjg2NCw3LjI4NCwxMy40NjgsMTMuNDY4LDAsMCwxLTYuNzQ2LDIuNTY2Yy0zLjAzMS4yMjctNy4wODUtLjQ5NC03Ljk0Ny0xLjAyMy0uNTE5LTEuMTgxLTEuMDMxLTIuMzcyLTEuNTgxLTMuNjdhLjYzNi42MzYsMCwwLDEsLjE2LS44ODljLjU5LS41NjUsMS4xNTgtMS4xMTMsMS43NTMtMS42OTEuMjY0LS4yNTguNTU2LS41Ljc3OC0uMTI5LjgxNiwxLjI1OCwxLjU3OSwyLjQxMSwyLjM0NSwzLjU2Mi44NywxLjI4MiwyLjE5MywyLjQ1LDUuMDg2LDIuMjU2YTQuODI4LDQuODI4LDAsMCwwLDQuNDc3LTQuMDhjLjIxMy0zLjc0My0zLjU3Ni02LjQtMTMuNDI1LTcuMjUsMS44ODktNS43MDgsMy43MzItMTEuMjMxLDUuMjA1LTE1LjYyMSwyLjM0LjEwOCw0LjUwNi4zLDYuNTc1LjU2NiwxLjUzMS4yLDIuOTUzLjU1MSw0LjM3OC43MTZBMTkuOTUzLDE5Ljk1MywwLDAsMCwxOTYtNjc3Mi42OTNhMjAsMjAsMCwwLDAtMjAsMjAsMTkuOTA5LDE5LjkwOSwwLDAsMCwzLjg5MywxMS44NTJjLjg0Ny4wMDYsMS40MzQtLjE4MywxLjUtLjU0OWE1Ljk4Niw1Ljk4NiwwLDAsMC0uMDU0LTEuNTY5LDkxLjkyNiw5MS45MjYsMCwwLDEtLjM5MS0xMi40MDljLTEuMDE0LjA0NC0xLjkyNC4wOS0yLjguMTQxLjAzNi0uNzg1LjA3OC0xLjUyOS4xNDEtMi4zLjg2Mi0uMDgyLDEuNzc2LS4xNTUsMi43NzktLjIzOS4wNDMtLjY3Ny4wOTItMS4zMzEuMTUtMS45OTIuNDUtNC4wNSw0LjcxNi02LjUyOCw4LjI2OC03LjQ4NWExNy41MjksMTcuNTI5LDAsMCwxLDMuMy0uNTQ0Yy4yNzMtLjAwOS41NjgtLjAxOS44NjItLjAxOWEzLjY2LDMuNjYsMCwwLDEsMS45NTYuMzljLjc2Ni41NzQsMS41MjQsMS4xNDUsMi4zMjksMS43ODIuMDgxLjEwOC4xNjguMjc4LS4wMzIuNTc0LS4zNy40MzItLjcyNy44NDYtMS4xLDEuMjktLjIxNi4yNjMtLjU3Ni4xOTMtLjg3OC4xMTItLjYzNC0uMzI1LTEuMjQ0LS42MjMtMS44NjItLjkyMmE4LjA1OSw4LjA1OSwwLDAsMC0zLjU3MS0uOTYyLDIuMDYzLDIuMDYzLDAsMCwwLTEuNjY2LDIuMDE2Yy0uMTExLDEuNzE1LS4xODYsMy40NzQtLjI0OSw1LjM3OSwyLjIzOC0uMDY0LDQuNDY5LS4xLDYuODI0LS4xMTMsMCwuNTM2LDAsMS4wMjcsMCwxLjU3NS0uNzY3LjM0NC0xLjQ5Mi42OTEtMi4yNjIsMS4wNDItMS41ODguMDE3LTMuMS4wMy00LjYyMS4wNTctLjA3LDQuNTMyLDAsOS4wNDYuMiwxMy4yMmE1LjcxOSw1LjcxOSwwLDAsMCwuMjUyLDEuN2MuMjE3LjUzOCwxLjQ2Ni45NTMsNC4xODQsMS4xMDYuMDEuNDczLjAyNC45MTkuMDM4LDEuMzc4YTg0Ljg1Myw4NC44NTMsMCwwLDEtMTIuMDgxLTEuMTY1LDE5Ljk1MSwxOS45NTEsMCwwLDAsMTQuOSw2LjY2MywyMCwyMCwwLDAsMCwyMC0yMCwxOS45LDE5LjksMCwwLDAtMy40OTMtMTEuMjkzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDY4NTEpIi8+CiAgICA8L2NsaXBQYXRoPgogICAgPGNsaXBQYXRoIGlkPSJjbGlwLXBhdGgtNyI+CiAgICAgIDxwYXRoIGlkPSJQYXRoXzY4IiBkYXRhLW5hbWU9IlBhdGggNjgiIGNsYXNzPSJjbHMtMiIgZD0iTTE3Ni02NzMyaDQwdi00MUgxNzZaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDY4NTEpIi8+CiAgICA8L2NsaXBQYXRoPgogICAgPGNsaXBQYXRoIGlkPSJjbGlwLXBhdGgtOCI+CiAgICAgIDxwYXRoIGlkPSJQYXRoXzY2IiBkYXRhLW5hbWU9IlBhdGggNjYiIGNsYXNzPSJjbHMtMSIgZD0iTTE3OS45ODUtNjc0MC40MzVxLjU2NC43NzksMS4yLDEuNWE4Mi43LDgyLjcsMCwwLDAsMTEuOTg4LDEuMTc1Yy0uMDE1LS40NjMtLjAyOC0uOTEzLS4wMzgtMS4zOS0yLjctLjE1NS0zLjkzNi0uNTcyLTQuMTUxLTEuMTE0YTUuODUxLDUuODUxLDAsMCwxLS4yNS0xLjcwOWMtLjItNC4yMDgtLjI2OS04Ljc2LS4yLTEzLjMyOCwxLjUxLS4wMjcsMy4wMS0uMDM5LDQuNTg2LS4wNTcuNzY0LS4zNTMsMS40ODItLjcsMi4yNDQtMS4wNSwwLS41NTMsMC0xLjA0OCwwLTEuNTg4LTIuMzM2LjAxMi00LjU1LjA0OS02Ljc3MS4xMTMuMDYyLTEuOTE5LjEzNy0zLjY5Mi4yNDctNS40MjJhMi4wNywyLjA3LDAsMCwxLDEuNjUzLTIuMDMyLDcuOSw3LjksMCwwLDEsMy41NDQuOTY5Yy42MTMuMywxLjIxOC42LDEuODQ2LjkyOS4zLjA4My42NTYuMTUzLjg3Mi0uMTEyLjM3My0uNDQ4LjcyNy0uODY1LDEuMDk0LTEuMy4yLS4zLjExMy0uNDY5LjAzMi0uNTc5LS44LS42NDItMS41NTEtMS4yMTctMi4zMTEtMS44YTMuNTkxLDMuNTkxLDAsMCwwLTEuOTQyLS4zOTNjLS4yOTEsMC0uNTg0LjAxMS0uODU1LjAxOWExNy4xNjIsMTcuMTYyLDAsMCwwLTMuMjcyLjU1Yy0zLjUyNS45NjQtNy43NTcsMy40NjItOC4yLDcuNTQ0LS4wNTcuNjY3LS4xMDUsMS4zMjctLjE0OCwyLjAwOS0xLC4wODUtMS45LjE1OC0yLjc1Ny4yNDEtLjA2Mi43ODItLjEsMS41MzEtLjE0LDIuMzIyLjg2Ny0uMDUxLDEuNzctLjEsMi43NzYtLjE0MmE5NC4xNDIsOTQuMTQyLDAsMCwwLC4zODgsMTIuNTEsNi4xMzcsNi4xMzcsMCwwLDEsLjA1NCwxLjU4MmMtLjA2Mi4zNjgtLjY0Ni41NTktMS40ODYuNTUzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDY4NTEpIi8+CiAgICA8L2NsaXBQYXRoPgogICAgPGNsaXBQYXRoIGlkPSJjbGlwLXBhdGgtMTAiPgogICAgICA8cGF0aCBpZD0iUGF0aF82MyIgZGF0YS1uYW1lPSJQYXRoIDYzIiBjbGFzcz0iY2xzLTEiIGQ9Ik0yMTQuMjk0LTY3NDcuNzFhOC43MjMsOC43MjMsMCwwLDAtMi4xNDQtNi41NDdjLTEuOTA5LTIuMDY4LTUuMTMxLTMuODIyLTExLjc1OC00LjIzMS4zNDUtMS4wNzkuNjQ2LTIuMDY4Ljk2NC0zLjA3OCwzLjk2Mi4xNCw3LjQ4Ny40MjcsMTAuNDg5LjgxOC4yMzctMS4wOC4zNjUtMi4xMzYuNjExLTMuMTU0cS0uNDU5LS42NzQtLjk3LTEuMzA1Yy0xLjQyNy0uMTY2LTIuODUtLjUyNC00LjM4Mi0uNzItMi4wNy0uMjY4LTQuMjM4LS40Ni02LjU3OS0uNTY5LTEuNDc0LDQuNDE0LTMuMzE4LDkuOTY2LTUuMjEsMTUuNzA1LDkuODU4Ljg1NywxMy42NDksMy41MjUsMTMuNDM1LDcuMjlhNC44MzksNC44MzksMCwwLDEtNC40OCw0LjFjLTIuODk0LjItNC4yMTktLjk3OS01LjA4OS0yLjI2Ny0uNzY2LTEuMTU3LTEuNTMtMi4zMTctMi4zNDUtMy41ODItLjIyMi0uMzcyLS41MTUtLjEzLS43NzguMTMtLjYuNTgxLTEuMTY0LDEuMTMyLTEuNzU0LDEuN2EuNjQzLjY0MywwLDAsMC0uMTYxLjljLjU1MSwxLjMsMS4wNjQsMi41LDEuNTgzLDMuNjkuODYzLjUzMiw0LjkxOSwxLjI1Niw3Ljk1MiwxLjAyOGExMy40MjQsMTMuNDI0LDAsMCwwLDYuNzUxLTIuNTgsOS41MzEsOS41MzEsMCwwLDAsMy44NjYtNy4zMjMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgNjg1MSkiLz4KICAgIDwvY2xpcFBhdGg+CiAgICA8Y2xpcFBhdGggaWQ9ImNsaXAtcGF0aC0xMiI+CiAgICAgIDxwYXRoIGlkPSJQYXRoXzc0IiBkYXRhLW5hbWU9IlBhdGggNzQiIGNsYXNzPSJjbHMtMSIgZD0iTTE4MS4wNzEtNjczOS40NTNoMFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgNjg1MSkiLz4KICAgIDwvY2xpcFBhdGg+CiAgPC9kZWZzPgogIDxnIGlkPSJMb2dvX0Y1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTkyMzkgLTUxMzgpIj4KICAgIDxnIGlkPSJHcm91cF82MDQiIGRhdGEtbmFtZT0iR3JvdXAgNjA0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMzYpIj4KICAgICAgPGcgaWQ9Ikdyb3VwXzE1MyIgZGF0YS1uYW1lPSJHcm91cCAxNTMiIGNsYXNzPSJjbHMtMyI+CiAgICAgICAgPGcgaWQ9Ikdyb3VwXzE1MiIgZGF0YS1uYW1lPSJHcm91cCAxNTIiIGNsYXNzPSJjbHMtNCI+CiAgICAgICAgICA8cGF0aCBpZD0iUGF0aF81OCIgZGF0YS1uYW1lPSJQYXRoIDU4IiBjbGFzcz0iY2xzLTUiIGQ9Ik0yMDUuOTMtNjcyOS45NDdoMTIuODE3di0xMi44MTdIMjA1LjkzWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCA2ODUxKSIvPgogICAgICAgIDwvZz4KICAgICAgPC9nPgogICAgICA8ZyBpZD0iR3JvdXBfMTYyIiBkYXRhLW5hbWU9Ikdyb3VwIDE2MiIgY2xhc3M9ImNscy02Ij4KICAgICAgICA8ZyBpZD0iR3JvdXBfMTYxIiBkYXRhLW5hbWU9Ikdyb3VwIDE2MSIgY2xhc3M9ImNscy00Ij4KICAgICAgICAgIDxnIGlkPSJHcm91cF8xNjAiIGRhdGEtbmFtZT0iR3JvdXAgMTYwIiBjbGFzcz0iY2xzLTciPgogICAgICAgICAgICA8ZyBpZD0iR3JvdXBfMTU5IiBkYXRhLW5hbWU9Ikdyb3VwIDE1OSIgY2xhc3M9ImNscy04Ij4KICAgICAgICAgICAgICA8ZyBpZD0iR3JvdXBfMTU4IiBkYXRhLW5hbWU9Ikdyb3VwIDE1OCIgY2xhc3M9ImNscy05Ij4KICAgICAgICAgICAgICAgIDxwYXRoIGlkPSJQYXRoXzY3IiBkYXRhLW5hbWU9IlBhdGggNjciIGNsYXNzPSJjbHMtNSIgZD0iTTE3MS02NzI3LjY5M2g1MHYtNTBIMTcxWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCA2ODUxKSIvPgogICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPC9nPgogICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgICAgPC9nPgogICAgPC9nPgogICAgPGcgaWQ9Ikdyb3VwXzE1NyIgZGF0YS1uYW1lPSJHcm91cCAxNTciIGNsYXNzPSJjbHMtMTAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0zNikiPgogICAgICA8ZyBpZD0iR3JvdXBfMTU2IiBkYXRhLW5hbWU9Ikdyb3VwIDE1NiIgY2xhc3M9ImNscy00Ij4KICAgICAgICA8cGF0aCBpZD0iUGF0aF82NCIgZGF0YS1uYW1lPSJQYXRoIDY0IiBjbGFzcz0iY2xzLTExIiBkPSJNMTczLjI1My02NzMyLjc2M2gyOS43MTh2LTM5Ljg1OUgxNzMuMjUzWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCA2ODUxKSIvPgogICAgICA8L2c+CiAgICA8L2c+CiAgICA8ZyBpZD0iR3JvdXBfMTU1IiBkYXRhLW5hbWU9Ikdyb3VwIDE1NSIgY2xhc3M9ImNscy0xMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTM2KSI+CiAgICAgIDxnIGlkPSJHcm91cF8xNTQiIGRhdGEtbmFtZT0iR3JvdXAgMTU0IiBjbGFzcz0iY2xzLTQiPgogICAgICAgIDxwYXRoIGlkPSJQYXRoXzYxIiBkYXRhLW5hbWU9IlBhdGggNjEiIGNsYXNzPSJjbHMtMTEiIGQ9Ik0xODkuMDI4LTY3MzIuNzYzSDIxOS4zMVYtNjc3MS41SDE4OS4wMjhaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDY4NTEpIi8+CiAgICAgIDwvZz4KICAgIDwvZz4KICAgIDxnIGlkPSJHcm91cF8xNjQiIGRhdGEtbmFtZT0iR3JvdXAgMTY0IiBjbGFzcz0iY2xzLTEzIj4KICAgICAgPGcgaWQ9Ikdyb3VwXzE2MyIgZGF0YS1uYW1lPSJHcm91cCAxNjMiIGNsYXNzPSJjbHMtNCI+CiAgICAgICAgPHBhdGggaWQ9IlBhdGhfNzIiIGRhdGEtbmFtZT0iUGF0aCA3MiIgY2xhc3M9ImNscy0xNCIgZD0iTTE3Ni4wNy02NzM0LjQ1M2gxMHYtMTBoLTEwWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCA2ODUxKSIvPgogICAgICA8L2c+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4K");
+      background-repeat:no-repeat;
+      background-size:100vw 100vh;
+      background-attachment:fixed;
+    }
+    h1 {position:sticky;top:0;width:fit-content;text-decoration:dashed underline #CCCCCC 8px;padding-right:0.2ex;z-index:1}
+    ol > li {padding-bottom:1em}
+    ol > li::marker {font-weight:bold}
+    h2 {font-variant:small-caps;font-size:large;font-weight:normal;display:inline}
+    blockquote,summary samp{background-color:rgba(0,0,0,0.75);color:#FFF}
+    blockquote > samp {color:#FFF}
+    blockquote {overflow-x:clip;overflow-clip-margin:9vw;padding-left:0.5ex;margin-top:0.5ex;white-space:pre}
+    blockquote span {color:yellow}
+    summary {list-style-image: url("data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyZXgiIGhlaWdodD0iMmV4Ij48c3R5bGU+DQovKiA8IVtDREFUQVsgKi8NCnN2Z3tiYWNrZ3JvdW5kLWltYWdlOnJhZGlhbC1ncmFkaWVudCh3aGl0ZSx3aGl0ZSxyZ2JhKDI1NSwyNTUsMjU1LDApLHJnYmEoMjU1LDI1NSwyNTUsMCkscmdiYSgyNTUsMjU1LDI1NSwwKSl9DQovKiBdXT4gKi8NCjwvc3R5bGU+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJjZW50cmFsIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjJleCI+4piQPC90ZXh0Pg0KPHRleHQgeD0iNjUlIiB5PSIzMyUiIGRvbWluYW50LWJhc2VsaW5lPSJjZW50cmFsIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjIuNWV4IiBmaWxsPSIjMDA3NzAwIj7inJM8L3RleHQ+DQo8L3N2Zz4=")}
+    summary:focus {list-style-image: unset;list-style-type: "\27A4\00A0\00A0";}
+    li:focus-within > details:focus-within ~ details > summary,li:focus-within ~ li summary,ol:not(:focus-within) summary {list-style-image: url("data:image/svg+xml;charset=utf-8;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyZXgiIGhlaWdodD0iMmV4Ij48c3R5bGU+DQovKiA8IVtDREFUQVsgKi8NCnN2Z3tiYWNrZ3JvdW5kLWltYWdlOnJhZGlhbC1ncmFkaWVudCh3aGl0ZSx3aGl0ZSxyZ2JhKDI1NSwyNTUsMjU1LDApLHJnYmEoMjU1LDI1NSwyNTUsMCkscmdiYSgyNTUsMjU1LDI1NSwwKSl9DQovKiBdXT4gKi8NCjwvc3R5bGU+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJjZW50cmFsIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjJleCI+4piQPC90ZXh0Pjwvc3ZnPg==");}
+    summary[tabindex="0"][property$="t"]:hover {list-style-image: unset;list-style-type: "\25A0\00A0\00A0";}
+    li:focus-within > h2 {filter:drop-shadow(0.09ex 0.09ex 0.12ex);text-decoration:white 1px underline;animation: 0.5s infinite alternate underpulse}
+    details[open] > summary:active {pointer-events:none}
+    summary:focus::marker,summary:hover::marker {animation: 0.5s infinite alternate pulsate}
+    @keyframes pulsate {
+      from {color:#008;}
+      to {color:#FFF;}
+    }
+    @keyframes underpulse {
+      from {text-decoration-style:solid;}
+      25% {text-decoration-style:solid;}
+      to {text-decoration-style:dotted;}
+    }
+    </style>
+</head>
+<body><main vocab="http://schema.org/" typeof="HowTo">
+	<h1 property="name">F5 BIG-IP 4000 SERIES</h1>
+<ol>
+  <li typeof="HowToSection" property="step"><h2 property="name">Start the console session.</h2>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text" autofocus>Plug in serial cable to console port of device from PC COM1 port.</summary>
+    </details>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Open PuTTY and select "Serial" connection type, leave baud rate (Speed) and other settings as default.</summary>
+    </details>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Plug power into device and if a power button exists, turn it on.</summary>
+    </details>
+  </li>
+  <li typeof="HowToSection" property="step"><h2 property="name">Change the password of the root account.</h2>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">When the GRUB menu appears type <em>e</em> twice to edit the boot command for the default OS image, navigate to the end of the line and append the word <em>single</em> to it:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+Command line: rw root=UUID=f5f7de6f-9a40-4a01-aaa5-461fda03aec8  console=ttyS0 panic=1  platform=C113 <span>single</span>
+        </samp></blockquote>
+    </details>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Press <em>Enter</em> when done, then type <em>b</em> to boot with that command selected.</summary>
+    </details>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">At the <samp>[@!:!:!] / # </samp>&nbsp;prompt type the <em>mount -o rw,remount /</em> command:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+[@!:!:!] / # <span>mount -o rw,remount /</span>
+        </samp></blockquote>
+    </details>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Type the <em>passwd root</em> command and enter <em>default</em> twice:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+[@!:!:!] / # <span>passwd root</span>
+Changing password for user root.
+New BIG-IP password: <span>default</span>
+Retype new BIG-IP password: <span>default</span>
+Changing password for user root.
+passwd.bin: all authentication tokens updated successfully.
+        </samp></blockquote>
+    </details>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Type the <em>reboot</em> command and allow the system to fully boot up:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+[@!:!:!] # <span>reboot</span>
+[@!:!:!] # Stopping increase_entropy: [  OK  ]
+Sending all processes the TERM signal... [  OK  ]
+Sending all processes the KILL signal... init: rcS-sulogi[  OK  ]
+Saving random seed:  [  OK  ]
+Syncing hardware clock to system time [  OK  ]
+Turning off swap:  [  OK  ]
+Unmounting file systems:  [  OK  ]
+init: Re-executing /sbin/init
+Please stand by while rebooting the system...
+Restarting system.
+        </samp></blockquote>
+    </details>
+  </li>
+  <li typeof="HowToSection" property="step"><h2 property="name">Log in and erase configuration.</h2>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">When prompted type <em>root</em> for the login and <em>default</em> as you previously set for the password:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+BIG-IP 12.1.5.3 Build 0.16.5
+Kernel 2.6.32-431.56.1.el6.f5.x86_64 on an x86_64
+xxxx.xxx.xxx.xxx.xx login: <span>root</span>
+Password: <span>default</span>
+Last login: Sun Jun 26 21:12:49 from 137.172.153.138
+        </samp></blockquote>
+    </details>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Check for a license key by typing the <em>tmsh show sys license</em> command:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+[root@localhost:Active:Standalone] config # <span>tmsh show sys license</span>
+
+Sys::License
+Licensed Version         11.5.3
+Registration key         UHNNT-TLKCB-MVENG-FTJSC-CQFUGUP
+Licensed On              2016/03/20
+Service Check Date       2018/08/30
+Platform ID              C113
+Appliance Serial Number  f5-vssg-ejyf
+
+Active Modules
+  LTM, Base, 4000S (UBNUTTJ-JMQSBNV)
+    Application Acceleration Manager, Core
+    APM, Limited
+    IPV6 Gateway
+    Rate Shaping
+    Anti-Virus Checks
+    Base Endpoint Security Checks
+    Firewall Checks
+    Network Access
+    Secure Virtual Keyboard
+    APM, Web Application
+    Machine Certificate Checks
+    Protected Workspace
+    Remote Desktop
+    App Tunnel
+    SSL, 4000S
+    Ram Cache
+        </samp></blockquote>
+    </details>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Type <em>tmsh</em> to enter the tmos command shell:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+[root@rmsnidccs05:INOPERATIVE:] config # <span>tmsh</span>
+        </samp></blockquote>
+    </details>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Type the <em>load /sys config default</em> command confirming with <em>y</em>:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+root@(rmsnidccs05)(cfg-sync )(INOPERATIVE)(/Common)(tmos)# <span>load /sys config default</span>
+Reset the system configuration to factory defaults? (y/n) <span>y</span>
+Loading system configuration...
+  /defaults/asm_base.conf
+  /defaults/config_base.conf
+  /defaults/ipfix_ie_base.conf
+  /defaults/ipfix_ie_f5base.conf
+  /defaults/low_profile_base.conf
+  /defaults/low_security_base.conf
+  /defaults/policy_base.conf
+  /defaults/wam_base.conf
+  /defaults/analytics_base.conf
+  /defaults/apm_base.conf
+  /defaults/apm_saml_base.conf
+  /defaults/app_template_base.conf
+  /defaults/classification_base.conf
+  /var/libdata/dpi/conf/classification_update.conf
+  /defaults/urlcat_base.conf
+  /defaults/daemon.conf
+  /defaults/pem_base.conf
+  /defaults/profile_base.conf
+  /defaults/sandbox_base.conf
+  /defaults/security_base.conf
+  /defaults/urldb_base.conf
+  /usr/share/monitors/base_monitors.conf
+  /usr/local/gtm/include/gtm_base_region_isp.conf
+  /usr/share/monitors/gtm_base_monitors.conf
+Loading configuration...
+  /defaults/defaults.scf
+Resetting trust domain...
+Setting flag to reset ASM data...
+        </samp></blockquote>
+    </details>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Type the <em>reboot</em> command:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+root@(localhost)(cfg-sync Standalone)(Active)(/Common)(tmos)# <span>reboot</span>
+The system will be rebooted momentarily
+
+Broadcast message from root@localhost.localdomain
+        (/dev/ttyS0) at 16:22 ...
+
+The system is going down for reboot NOW!
+root@(localhost)(cfg-sync Standalone)(Active)(/Common)(tmos)# Shutting down smartd: [  OK  ]
+Using bigstart to shutdown Big-IP:
+Stopping lopd: [  OK  ]
+Stopping httpd: [  OK  ]
+Stopping sshd:[  OK  ]
+Stopping increase_entropy: [  OK  ]
+Stopping crond: [  OK  ]
+Shutting down ntpd: [  OK  ]
+Stopping block device availability: Deactivating block devices:
+  UMOUNT: unmounting vg--db--sda-dat.log.1 (dm-2) mounted on /var/log
+umount: /var/log: device is busy.
+        (In some cases useful info about processes that use
+         the device is found by lsof(8) or fuser(1))
+  UMOUNT: unmounting vg--db--sda-set.2._var (dm-11) mounted on /var
+umount: /var: device is busy.
+        (In some cases useful info about processes that use
+         the device is found by lsof(8) or fuser(1))
+  [SKIP]: unmount of vg--db--sda-set.2._usr (dm-9) mounted on /usr
+  [SKIP]: unmount of vg--db--sda-dat.swapvol.1 (dm-3) mounted on [SWAP]
+  UMOUNT: unmounting vg--db--sda-dat.share.1 (dm-1) mounted on /shared
+umount: /shared: device is busy.
+        (In some cases useful info about processes that use
+         the device is found by lsof(8) or fuser(1))
+  UMOUNT: unmounting vg--db--sda-set.2._config (dm-10) mounted on /config
+  [SKIP]: unmount of vg--db--sda-set.2.root (dm-8) mounted on /
+[  OK  ]
+Shutting down syslog-ng: [  OK  ]
+Killing mdmonitor: [  OK  ]
+Stopping system message bus: [  OK  ]
+Stopping auditd: init: Disconnected from system bus
+[  OK  ]
+Shutting down interface mgmt:  [  OK  ]
+Shutting down interface eth0:  [  OK  ]
+Shutting down loopback interface:  [  OK  ]
+iptables: Setting chains to policy ACCEPT: mangle filter raw [  OK  ]
+iptables: Flushing firewall rules: [  OK  ]
+iptables: Unloading modules: [  OK  ]
+Stopping monitoring for VG vg-db-sda:   16 logical volume(s) in volume group "vg-db-sda" unmonitored
+[  OK  ]
+Sending all processes the TERM signal... [  OK  ]
+Sending all processes the KILL signal... [  OK  ]
+Saving random seed:  [  OK  ]
+Syncing hardware clock to system time [  OK  ]
+Turning off swap:  [  OK  ]
+Unmounting file systems:  [  OK  ]
+init: Re-executing /sbin/init
+Please stand by while rebooting the system...
+Restarting system.
+        </samp></blockquote>
+    </details>
+  </li>
+  <li typeof="HowToSection" property="step"><h2 property="name">Copy all the output from the session into your records.</h2>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Right-click PuTTY's titlebar, from that dropdown menu click on "Copy All to Clipboard"</summary>
+    </details>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Open the file of record certifying the deconfiguration of this device and use <em>CTRL V</em> to paste all the output from PuTTY into that file. Formatting the text with a fixed-width font helps it look more readable.</summary>
+    </details>
+  </li>
+  <li typeof="HowToSection" property="step"><h2 property="name">End the session.</h2>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Close PuTTy.</summary>
+    </details>
+  </li>
+</ol>
+</main></body></html>

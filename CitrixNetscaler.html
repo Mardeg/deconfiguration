@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Licensed under the Academic Free License version 3.0
+	- Any copyright dedicated to the public domain -->
+	<head vocab="https://schema.org/DigitalDocument">
+		<link rel="license nofollow schema:license" href="https://spdx.org/licenses/AFL-3.0">
+		<link rel="license nofollow schema:license" href="https://creativecommons.org/publicdomain/zero/1.0/">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Security-Policy" content="base-uri 'self'; form-action 'none'; object-src 'none'; media-src 'self' data:; img-src 'self' data:; child-src blob: https://web.archive.org; style-src 'self' 'unsafe-inline'; connect-src 'self' blob: data:">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title property="headline">Citrix Netscaler 6xCu</title>
+		<meta name="description" content="How to factory reset instructions tutorial guide">
+		<link rel="icon" href="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn5K7PC90ZXh0Pjwvc3ZnPg==">
+    <style>
+    :root,h1 {background-color:#CCC}
+    :root {
+      color:#000;
+      background-image:url("data:image/svg+xml;charset=utf-8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgdmlld0JveD0iMCAwIDI3LjQyMTQxNyAxMS40NDgxOSIKICAgdmVyc2lvbj0iMS4xIgogICBpZD0ic3ZnMzU3IgogICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxnCiAgICAgZmlsbC1vcGFjaXR5PSIwLjEiCiAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTAuNjE5ODEwNTQsLTAuNzI0NjM4NDQpIj4KICAgIDxnCiAgICAgICBpZD0iZzMyNSIKICAgICAgIHRyYW5zZm9ybT0ibWF0cml4KDAuMjY0NTgzMzMsMCwwLDAuMjY0NTgzMzMsMC4zNTI0MTIwNCwwLjUxMDQzOTcxKSI+CiAgICAgIDxnCiAgICAgICAgIGlkPSJnMzg5MDciCiAgICAgICAgIHRyYW5zZm9ybT0ibWF0cml4KDEuMjUsMCwwLC0xLjI1LC01MzkuODg1NjEsMTU0LjM5NzA3KSI+Cgk8ZwogICBpZD0iWE1MSURfMV8iPgoJCTxnCiAgIGlkPSJnMTgiPgoJCQk8cG9seWdvbgogICBwb2ludHM9IjUwNC4wNzYsMTE0LjU4MiA1MDYuMjEyLDExMC43NTggNTA4LjY4NSwxMTQuNTgyIDUxNS4zMjUsMTE0LjU4MiA1MDkuMzU3LDEwNi4yODYgNTE1LjYyOSw5Ni41NSA1MDkuMTQsOTYuNTUgNTA2LjEzMywxMDEuODYyIDUwMi4zMjUsOTYuNTUgNDk1Ljc3Miw5Ni41NSA1MDIuOTk3LDEwNi4zMSA0OTcuNDYxLDExNC41ODIgIgogICBpZD0icG9seWdvbjIiIC8+CgoJCQk8cG9seWdvbgogICBwb2ludHM9IjQ5NC44MzcsMTE0LjU4MiA0ODkuNDIxLDExNC41ODIgIgogICBpZD0icG9seWdvbjQiIC8+CgoJCQk8cGF0aAogICBkPSJtIDQ5Mi4xMzMsOTUuMDMgYyAxLjg3MiwwIDMuMzkxLC0xLjUxMiAzLjM5MSwtMy4zODQgMCwtMS44NzIgLTEuNTIsLTMuMzkxIC0zLjM5MSwtMy4zOTEgLTEuODczLDAgLTMuMzkyLDEuNTIgLTMuMzkyLDMuMzkxIC0xMGUtNCwxLjg3MiAxLjUyLDMuMzg0IDMuMzkyLDMuMzg0IHoiCiAgIGlkPSJwYXRoNiIgLz4KCgkJCTxwYXRoCiAgIGQ9Im0gNDgyLjcxNiwxMDMuNzM0IDUuNTEzLC03LjE4NCBoIC02LjgxNiBsIC0zLjQ0LDUuMzg0IFYgOTYuNTUgaCAtNS40MDggdiAxOC4wMzIgaCA3LjA4OCBjIDIuMTA0LDAgMy44MDgsLTAuNTkyIDQuOTI3LC0xLjcxMiAxLC0xIDEuNTA1LC0yLjM1MiAxLjUwNSwtNC4wMzIgMCwtMi40OCAtMS4zMDUsLTQuNCAtMy4zNjksLTUuMTA0IHogbSAtMS40NzIsNC44MzIgYyAwLDAuNjA4IC0wLjE1OSwxLjA1NiAtMC40OCwxLjM4NCAtMC42NCwwLjY0IC0xLjg3MiwwLjcyOCAtMi43OTEsMC43MzYgdiAtNC4yNDggYyAyLjMxMiwwLjAyNCAzLjI3MSwwLjY0IDMuMjcxLDIuMTI4IHoiCiAgIGlkPSJwYXRoOCIgLz4KCgkJCTxwb2x5Z29uCiAgIHBvaW50cz0iNDcxLjEsMTE0LjU4MiA0NzEuMSwxMDkuODcgNDY2Ljk4OCwxMDkuODcgNDY2Ljk4OCw5Ni41NSA0NjEuNjA0LDk2LjU1IDQ2MS42MDQsMTA5Ljg3IDQ1Ny40OTMsMTA5Ljg3IDQ1Ny40OTMsMTE0LjU4MiAiCiAgIGlkPSJwb2x5Z29uMTAiIC8+CgoJCQk8cG9seWdvbgogICBwb2ludHM9IjQ1MC42MjksOTYuNTUgNDUwLjYyOSw5OS4wMjIgNDUwLjYyOSwxMTIuMDk0IDQ1MC42MjksMTE0LjU4MiA0NTYuMDM2LDExNC41ODIgNDU2LjAzNiw5Ni41NSAiCiAgIGlkPSJwb2x5Z29uMTIiIC8+CgoJCQk8cGF0aAogICBkPSJtIDQ1My4zMzMsMTIyLjg3IGMgMS44NzIsMCAzLjM5MSwtMS41MiAzLjM5MSwtMy4zODQgMCwtMS44NzIgLTEuNTIsLTMuNCAtMy4zOTEsLTMuNCAtMS44OCwwIC0zLjM5MiwxLjUyOCAtMy4zOTIsMy40IC0xMGUtNCwxLjg2NCAxLjUxMSwzLjM4NCAzLjM5MiwzLjM4NCB6IgogICBpZD0icGF0aDE0IiAvPgoKCQkJPHBhdGgKICAgZD0ibSA0NDguOTgxLDExMi4wOTQgLTIuODQ4LC00LjYgYyAtMC44LDEuMzI4IC0yLjM3NywyLjE4NCAtMy45NjgsMi4xODQgLTIuMjczLDAgLTMuOTM2LC0xLjg0OCAtMy45MzYsLTQuMTIgMCwtMi4yNzIgMS42NjMsLTQuMTEzIDMuOTM2LC00LjExMyAxLjU5MSwwIDMuMTY4LDAuODU2IDMuOTY4LDIuMTg0IGwgMi44NDgsLTQuNjA4IGMgLTEuNzIsLTEuNzkyIC00LjEzNiwtMi45MDUgLTYuODE2LC0yLjkwNSAtNS4yMTYsMCAtOS40NDgsNC4yMjMgLTkuNDQ4LDkuNDQxIDAsNS4yMTYgNC4yMzIsOS40NTYgOS40NDgsOS40NTYgMi42OCwxMGUtNCA1LjA5NiwtMS4xMTkgNi44MTYsLTIuOTE5IHoiCiAgIGlkPSJwYXRoMTYiIC8+CgoJCTwvZz4KCgk8L2c+Cgo8L2c+CiAgICAgIDxwb2x5Z29uCiAgICAgICAgIHBvaW50cz0iNzEuOSwzMy43MDkgNzEuOSwzMC42MiA3MS45LDE0LjI4IDcxLjksMTEuMTY5IDc4LjY1OSwxMS4xNjkgNzguNjU5LDMzLjcwOSAiCiAgICAgICAgIGlkPSJwb2x5Z29uMjIiIC8+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4K");
+      background-repeat:no-repeat;
+      background-size:100vw 100vh;
+      background-attachment:fixed;
+    }
+    h1 {position:sticky;top:0;width:fit-content;text-decoration:dashed underline #CCCCCC 8px;padding-right:0.2ex;z-index:1}
+    ol > li {padding-bottom:1em}
+    ol > li::marker {font-weight:bold}
+    h2 {font-variant:small-caps;font-size:large;font-weight:normal;display:inline}
+    blockquote,summary samp{background-color:rgba(0,0,0,0.75);color:#FFF}
+    blockquote > samp {color:#FFF}
+    blockquote {overflow-x:clip;overflow-clip-margin:9vw;padding-left:0.5ex;margin-top:0.5ex;white-space:pre}
+    blockquote span {color:yellow}
+    summary {list-style-image: url("data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyZXgiIGhlaWdodD0iMmV4Ij48c3R5bGU+DQovKiA8IVtDREFUQVsgKi8NCnN2Z3tiYWNrZ3JvdW5kLWltYWdlOnJhZGlhbC1ncmFkaWVudCh3aGl0ZSx3aGl0ZSxyZ2JhKDI1NSwyNTUsMjU1LDApLHJnYmEoMjU1LDI1NSwyNTUsMCkscmdiYSgyNTUsMjU1LDI1NSwwKSl9DQovKiBdXT4gKi8NCjwvc3R5bGU+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJjZW50cmFsIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjJleCI+4piQPC90ZXh0Pg0KPHRleHQgeD0iNjUlIiB5PSIzMyUiIGRvbWluYW50LWJhc2VsaW5lPSJjZW50cmFsIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjIuNWV4IiBmaWxsPSIjMDA3NzAwIj7inJM8L3RleHQ+DQo8L3N2Zz4=")}
+    summary:focus {list-style-image: unset;list-style-type: "\27A4\00A0\00A0";}
+    li:focus-within > details:focus-within ~ details > summary,li:focus-within ~ li summary,ol:not(:focus-within) summary {list-style-image: url("data:image/svg+xml;charset=utf-8;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyZXgiIGhlaWdodD0iMmV4Ij48c3R5bGU+DQovKiA8IVtDREFUQVsgKi8NCnN2Z3tiYWNrZ3JvdW5kLWltYWdlOnJhZGlhbC1ncmFkaWVudCh3aGl0ZSx3aGl0ZSxyZ2JhKDI1NSwyNTUsMjU1LDApLHJnYmEoMjU1LDI1NSwyNTUsMCkscmdiYSgyNTUsMjU1LDI1NSwwKSl9DQovKiBdXT4gKi8NCjwvc3R5bGU+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJjZW50cmFsIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjJleCI+4piQPC90ZXh0Pjwvc3ZnPg==");}
+    summary[tabindex="0"][property$="t"]:hover {list-style-image: unset;list-style-type: "\25A0\00A0\00A0";}
+    li:focus-within > h2 {filter:drop-shadow(0.09ex 0.09ex 0.12ex);text-decoration:white 1px underline;animation: 0.5s infinite alternate underpulse}
+    details[open] > summary:active {pointer-events:none}
+    summary:focus::marker,summary:hover::marker {animation: 0.5s infinite alternate pulsate}
+    @keyframes pulsate {
+      from {color:#008;}
+      to {color:#FFF;}
+    }
+    @keyframes underpulse {
+      from {text-decoration-style:solid;}
+      25% {text-decoration-style:solid;}
+      to {text-decoration-style:dotted;}
+    }
+    </style>
+</head>
+<body><main vocab="http://schema.org/" typeof="HowTo">
+	<h1 property="name">Citrix Netscaler 6xCu</h1>
+<ol>
+  <li typeof="HowToSection" property="step"><h2 property="name">Start the console session.</h2>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text" autofocus>Plug in serial cable to console port of device from PC COM1 port</summary>
+    </details>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Open PuTTY and select "Serial" connection type, leave baud rate (Speed) and other settings as default.</summary>
+    </details>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Plug power into device and if a power button exists, turn it on.</summary>
+    </details>
+  </li>
+  <li typeof="HowToSection" property="step"><h2 property="name">Boot into single user mode.</h2>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Press <em>Ctrl C</em> when prompted and before the countdown ends:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+Version 2.14.1219. Copyright (C) 2011 American Megatrends, Inc.
+Citrix MPX5550 BIOS Date:09/06/2012 Rev:2.1d
+CPU :           Intel(R) Xeon(R) CPU E31225 @ 3.10GHz
+Speed : 3.10 GHz
+The IMC is operating with DDR3 1333 Mhz
+Press &lt;DEL> to enter
+setup.
+A3
+
+
+1   NetScaler
+
+Default: 1 /boot.config: -h
+
+Consoles: serial port
+Press <span>Ctrl-C</span> for command prompt, or any other key to boot immediately.
+        </samp></blockquote>
+    </details>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Type the <em>boot -s</em> command:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+> <span>boot -s</span>
+GDB: debug ports: uartvailable memory
+GDB: current port: uartcommands, 'help' for more detailed help.
+KDB: debugger backends: ddb gdbRevision NS1.1a
+KDB: current backend: ddbader.conf
+…
+Copyright (c) 1992-2013 The FreeBSD Project.
+Copyright (c) 1979, 1980, 1983, 1986, 1988, 1989, 1991, 1992, 1993, 1994
+        The Regents of the University of California. All rights reserved.
+FreeBSD is a registered trademark of The FreeBSD Foundation.
+FreeBSD 8.4-NETSCALER-10.5 #0: Thu Apr 23 17:53:52 UTC 2015
+        </samp></blockquote>
+    </details>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Further output will bring you to the shell choice, press <em>Enter</em> for the <samp>\u@</samp> prompt.</summary>
+        <blockquote role="log" aria-label="example"><samp>
+Enter full pathname of shell or RETURN for /bin/sh:
+\u@
+        </samp></blockquote>
+    </details>
+  </li>
+  <li typeof="HowToSection" property="step"><h2 property="name">Erase configuration.</h2>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Type the <em>gpart show -p</em> command to discover the partition name to check with the <em>fsck</em> command, it will end in <em>1a</em>:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+\u@<span>gpart show -p</span>
+=>       63  312581745    ad4  MBR  (149G)
+         63    8389521         - free -  (4.0G)
+    8389584  304186176  ad4s1  freebsd  [active]  (145G)
+  312575760       6048         - free -  (3M)
+
+=>        0  304186176   ad4s1  BSD  (145G) [CORRUPT]
+          0         16          - free -  (8.0k)
+         16   16868234  ad4s1d  freebsd-vinum  (8.0G)
+   16868250         16          - free -  (8.0k)
+   16868266  203286494  ad4s1f  freebsd-vinum  (97G)
+  220154760   67108864  ad4s1g  freebsd-swap  (32G)
+  287263624      42836          - free -  (20M)
+  287306460   16867969  ad4s1h  freebsd-ufs  (8.0G)
+  304174429      11747          - free -  (5.8M)
+
+\u@<span>fsck_ufs /dev/ad4s1a</span>
+** /dev/ad4s1a
+** Last Mounted on /flash
+** Phase 1 - Check Blocks and Sizes
+** Phase 2 - Check Pathnames
+** Phase 3 - Check Connectivity
+** Phase 4 - Check Reference Counts
+** Phase 5 - Check Cyl groups
+223 files, 297376 used, 3786375 free (79 frags, 473287 blocks, 0.0% fragmentation)
+
+***** FILE SYSTEM MARKED CLEAN *****
+        </samp></blockquote>
+    </details>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Type the <em>df</em> command to check it is not already mounted then use the <em>mount</em> command to map it to /flash:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+\u@<span>df</span>
+Filesystem 1K-blocks   Used Avail Capacity  Mounted on
+/dev/md0      330094 321788  1706    99%    /
+devfs              1      1     0   100%    /dev
+\u@<span>mount /dev/ad4s1a /flash</span>
+        </samp></blockquote>
+    </details>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Type the following to erase all configuration files:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+\u@<span>cd /etc</span>
+\u@<span>for file in *; do</span>
+> <span>rm /nsconfig/$file 2> /dev/null</span>
+> <span>done</span>
+\u@<span>cd flash/nsconfig</span>
+\u@<span>rm ns.conf* ZebOS.conf rc.conf</span>
+\u@<span>cd ssl</span>
+\u@<span>GLOBIGNORE="ns-*"</span>
+\u@<span>rm *</span>
+        </samp></blockquote>
+    </details>
+  </li>
+  <li typeof="HowToSection" property="step"><h2 property="name">Reboot and check you can login with default credentials.</h2>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Type the <em>reboot</em> command:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+\u@<span>reboot</span>
+ reboot initiated by reboot with parent init
+Waiting (max 60 seconds) for system process `vnlru' to stop...done
+Waiting (max 60 seconds) for system process `bufdaemon' to stop...done
+
+Syncing disks, vnodes remaining...0 Waiting (max 60 seconds) for system process `syncer' to stop...0 done
+All buffers synced.
+Uptime: 5m45s
+usbus0: Controller shutdown
+uhub0: at usbus0, port 1, addr 1 (disconnected)
+ugen0.2: &lt;vendor 0x8087> at usbus0 (disconnected)
+uhub2: at uhub0, port 1, addr 2 (disconnected)
+ugen0.3: &lt;Winbond Electronics Corp> at usbus0 (disconnected)
+ums0: at uhub2, port 2, addr 3 (disconnected)
+ukbd0: at uhub2, port 2, addr 3 (disconnected)
+usbus0: Controller shutdown complete
+usbus1: Controller shutdown
+uhub1: at usbus1, port 1, addr 1 (disconnected)
+ugen1.2: &lt;vendor 0x8087> at usbus1 (disconnected)
+uhub3: at uhub1, port 1, addr 2 (disconnected)
+usbus1: Controller shutdown complete
+        </samp></blockquote>
+    </details>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Allow the system to boot up and for both the <samp>login: </samp>&nbsp;and <samp>password: </samp>&nbsp;prompt type <em>nsroot</em> then type the <em>shell</em> command to ensure access to it:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+!There is no ns.conf in the /nsconfig!
+
+Start Netscaler software
+NetScaler...
+grep: /nsconfig/ns.conf: No such file or directory
+[: -eq: unexpected operator
+nsstart: Tue May 24 02:56:15 EST 2022 : Creating default netscaler certificate for NetScaler internal communication
+nsstart: Tue May 24 02:56:15 EST 2022 : Creating the RSA root key
+nsstart: Tue May 24 02:56:16 EST 2022 : Creating the CSR for the root certificate
+nsstart: Tue May 24 02:56:16 EST 2022 : Create the Self-Signed Certificate root certificate
+nsstart: Tue May 24 02:56:16 EST 2022 : Creating the RSA key
+nsstart: Tue May 24 02:56:16 EST 2022 : Create the CSR for server cert
+nsstart: Tue May 24 02:56:16 EST 2022 : Create the Server Certificate
+This is NetScaler version NS10.5, build 56.15
+The NetScaler configuration file, /nsconfig/ns.conf, does not exist or is invalid
+Written to /nsconfig/ns.conf: 'set ns config -IPAddress %s -netmask %s
+'
+Written to /nsconfig/ns.conf: 'enable ns feature SP WL
+'
+Written to /nsconfig/ns.conf: 'enable ns mode FR L3 Edge USNIP PMTUD
+'
+Written to /nsconfig/ns.conf: 'set system user nsroot nsroot
+'
+Written to /nsconfig/ns.conf: 'add route  0.0.0.0 0.0.0.0 %s
+'
+Written to /nsconfig/ns.conf: 'add ssl certkey ns-server-certificate -cert ns-server.cert -key ns-server.key
+'
+tput: no terminal type specified and no TERM environmental variable.
+
+
+
+The NetScaler configuration file /nsconfig/ns.conf does not exist;
+a new file containing default configuration has been be created.
+
+
+
+Proceeding with default configuration file.
+
+initial config source: ns.conf; version=NS10.5, build=56.15
+license: {Platformid=2049, keyfeature1=0xd5f5cfff, keyfeature2=0x165b6,
+          swfeature1=0x0, swfeature2=0x0, sslvpn_feature1=0x1f,
+          sslvpn_feature2=0x5,sslvpn_max_licensed_users=0}
+layout: {num_nsppes=1, nsppe_location=/netscaler/nsppe}
+peconfig: {ip=192.168.100.1, netmask=255.255.0.0, num_pes=1, numNS-KERN nsppe_rendezvous: NSPPE-00 on CPU1
+_sslchips=1,
+           platforNS-KERN map_shared_mem_ioctl (cpu 1, NSPPE-00): Reserving 232 MB for shared memory type 0
+m_lic=0x801, timezone=4294966696, dstflag=1,
+                        rss_key_type=0, rss_key=NULL}
+ifconfig: 0/1 inet <span style="color:#0F0">192.168.100.1</span> netmask 255.255.0.0
+gateway: 192.168.0.1
+
+NetScaler has started successfully
+Start additional daemons: May 24 02:56:33 
+…
+monit monit daemon at 1000 awakened
+.
+
+ NetScaler initialization is still in progress; please wait
+ 20 to 30 seconds before attempting to log in.
+
+login: <span>nsroot</span>
+Password: <span>nsroot</span>
+May 24 02:58:13 &lt;auth.notice> ns login: ROOT LOGIN (nsroot) ON ttyu0
+Copyright (c) 1992-2013 The FreeBSD Project.
+Copyright (c) 1979, 1980, 1983, 1986, 1988, 1989, 1991, 1992, 1993, 1994
+        The Regents of the University of California. All rights reserved.
+
+ Done
+> <span>shell</span>
+Copyright (c) 1992-2013 The FreeBSD Project.
+Copyright (c) 1979, 1980, 1983, 1986, 1988, 1989, 1991, 1992, 1993, 1994
+        The Regents of the University of California. All rights reserved.
+
+root@ns#
+        </samp></blockquote>
+    </details>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" typeof="HowToTip" property="itemListElement"><span property="text">The web interface for managing the device should default to <em>http://192.168.100.1</em></span></summary>
+    </details>
+  </li>
+  <li typeof="HowToSection" property="step"><h2 property="name">Copy all the output from the session into your records.</h2>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Right-click PuTTY's titlebar, from that dropdown menu click on "Copy All to Clipboard"</summary>
+    </details>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Open the file of record certifying the deconfiguration of this device and use <em>CTRL V</em> to paste all the output from PuTTY into that file. Formatting the text with a fixed-width font helps it look more readable.</summary>
+    </details>
+  </li>
+  <li typeof="HowToSection" property="step"><h2 property="name">End the session.</h2>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Close PuTTy.</summary>
+    </details>
+  </li>
+</ol>
+</main></body></html>
