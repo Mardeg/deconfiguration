@@ -1,7 +1,7 @@
 {
   "name": "Deconfiguration",
   "description": "Steps to help factory reset switches, routers, servers, access points, etc.",
-  "start_url": "/",
+  "start_url": "/deconfiguration/",
   "lang": "en-US",
   "theme_color": "#888888",
   "display": "standalone",
