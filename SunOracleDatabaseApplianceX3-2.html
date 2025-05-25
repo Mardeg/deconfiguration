@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Licensed under the Academic Free License version 3.0
+	- Any copyright dedicated to the public domain -->
+	<head vocab="https://schema.org/DigitalDocument">
+		<link rel="license nofollow schema:license" href="https://spdx.org/licenses/AFL-3.0">
+		<link rel="license nofollow schema:license" href="https://creativecommons.org/publicdomain/zero/1.0/">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Security-Policy" content="base-uri 'self'; form-action 'none'; object-src 'none'; media-src 'self' data:; img-src 'self' data:; child-src blob: https://web.archive.org; style-src 'self' 'unsafe-inline'; connect-src 'self' blob: data:">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title property="headline">Sun Oracle Database Appliance X3-2</title>
+		<meta name="description" content="How to factory reset instructions tutorial guide">
+		<link rel="icon" href="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn5K7PC90ZXh0Pjwvc3ZnPg==">
+    <style>
+    :root,h1 {background-color:#CCC}
+    :root {
+      color:#000;
+      background-image:url("data:image/svg+xml;charset=utf-8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgdmlld0JveD0iMCAwIDI3LjYyMDMxNyAyNy42MTMzMDYiCiAgIHZlcnNpb249IjEuMSIKICAgaWQ9InN2ZzM3MiIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8ZwogICAgIGZpbGwtb3BhY2l0eT0iMC4xIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0wLjQ3NzM0MTEzLC0zOS4zNzQ1OTcpIj4KICAgIDxnCiAgICAgICBpZD0iZzM0OSIKICAgICAgIHRyYW5zZm9ybT0ibWF0cml4KDAuMjY0NTgzMzMsMCwwLDAuMjY0NTgzMzMsLTAuNTgwNzI3NjEsMzguOTE2NDA2KSI+CiAgICAgIDxwYXRoCiAgICAgICAgIHN0eWxlPSJmaWxsOiM1ZDg3YTEiCiAgICAgICAgIGQ9Im0gMTkuMzg4LDYwLjQwMiBjIC0zLjUyNCwzLjUzNCAtOS4yMjIsMy41MzQgLTEyLjc0NiwwIC0zLjUyNCwtMy41MiAtMy41MjQsLTkuMjIyIDAsLTEyLjczIGwgMjAuODYsLTIwLjg2NiA1LjU3Nyw1LjU3NyAtMjAuOTk3LDIxLjAwMyAxLjU3MSwxLjU4NyAyMS4wMDIsLTIxLjAxNCA1LjU5Nyw1LjU5MyAtMjAuODY0LDIwLjg1IgogICAgICAgICBpZD0icGF0aDQiIC8+CiAgICAgIDxwYXRoCiAgICAgICAgIHN0eWxlPSJmaWxsOiM1ZDg3YTEiCiAgICAgICAgIGQ9Im0gMzUuNjI2LDQ3LjQ0OSBjIDMuNTMsLTMuNTIzIDkuMjIyLC0zLjUyMyAxMi43NDMsMCAzLjUxMiwzLjUwOSAzLjUyMyw5LjIxMSAwLDEyLjczNSBMIDI3LjUwMyw4MS4wNDggMjEuOTI0LDc1LjQ2OSA0Mi45NDQsNTQuNDY2IDQxLjM1MSw1Mi44NzggMjAuMzU0LDczLjg5MyAxNC43NTgsNjguMzA1IDM1LjYyNiw0Ny40NDkiCiAgICAgICAgIGlkPSJwYXRoOCIgLz4KICAgICAgPHBhdGgKICAgICAgICAgc3R5bGU9ImZpbGw6IzVkODdhMSIKICAgICAgICAgZD0ibSA2Mi42NzYsOTAuNzQgYyAzLjUyMywzLjUxIDMuNTIzLDkuMjExIDAsMTIuNzE0IC0zLjUyLDMuNTI0IC05LjIyNywzLjUyNCAtMTIuNzQ3LDAgTCAyOS4wNzksODIuNTk1IDM0LjY1Niw3Ny4wMjkgNTUuNjYzLDk4LjAzMiA1Ny4yNDcsOTYuNDU1IDM2LjIzMyw3NS40NDMgNDEuODEsNjkuODY1IDYyLjY3Niw5MC43NCIKICAgICAgICAgaWQ9InBhdGgxMCIgLz4KICAgICAgPHBhdGgKICAgICAgICAgc3R5bGU9ImZpbGw6IzVkODdhMSIKICAgICAgICAgZD0ibSA0OS43MDcsNzQuNDkyIGMgLTMuNTE4LC0zLjUyNCAtMy41MTgsLTkuMjM5IDAsLTEyLjczNiAzLjUyMSwtMy41MzkgOS4yMjcsLTMuNTM5IDEyLjc1LDAgbCAyMC44NjUsMjAuODQ5IC01LjU4NSw1LjU3OSAtMjEuMDE0LC0yMS4wMDIgLTEuNTc2LDEuNTc1IDIxLjAwMywyMS4wMDUgLTUuNTc4LDUuNTggLTIwLjg2NSwtMjAuODUiCiAgICAgICAgIGlkPSJwYXRoMTIiIC8+CiAgICAgIDxwYXRoCiAgICAgICAgIHN0eWxlPSJmaWxsOiM1ZDg3YTEiCiAgICAgICAgIGQ9Im0gNzYuNzYxLDYwLjQwMiBjIC0zLjUwNywzLjUwNyAtOS4yMTEsMy41MDcgLTEyLjczNCwwIC0zLjUxNSwtMy41MiAtMy41MTUsLTkuMjIyIDAsLTEyLjc0MiBsIDIwLjg2NSwtMjAuODY1IDUuNTgsNS41NzggLTIxLjAwNywyMS4wMTMgMS41NzcsMS41NzcgMjEuMDAzLC0yMS4wMDMgNS41OTIsNS41NzYgLTIwLjg3NiwyMC44NjYiCiAgICAgICAgIGlkPSJwYXRoMTQiIC8+CiAgICAgIDxwYXRoCiAgICAgICAgIHN0eWxlPSJmaWxsOiM1ZDg3YTEiCiAgICAgICAgIGQ9Im0gOTMuMDE1LDQ3LjQzOCBjIDMuNTIsLTMuNTIzIDkuMjIzLC0zLjUyMyAxMi43MzIsMCAzLjUxNywzLjUwNSAzLjUzMyw5LjIyMyAwLDEyLjc0NiBMIDg0Ljg5MSw4MS4wMzEgNzkuMzAzLDc1LjQ1MiAxMDAuMzE3LDU0LjQzOSA5OC43NDMsNTIuODc4IDc3LjczNyw3My44NjUgNzIuMTQ5LDY4LjMwNCA5My4wMTUsNDcuNDM4IgogICAgICAgICBpZD0icGF0aDE2IiAvPgogICAgICA8ZwogICAgICAgICBpZD0iZzIyIj4KCQk8cGF0aAogICBzdHlsZT0iZmlsbDojNWQ4N2ExIgogICBkPSJtIDYyLjY3NiwzMy4zNSBjIDMuNTIzLDMuNTIzIDMuNTIzLDkuMjEgMCwxMi43NSAtMy41MiwzLjUwNyAtOS4yMjcsMy41MDcgLTEyLjc0NywwIEwgMjkuMDc5LDI1LjIzNSAzNC42NTYsMTkuNjQyIDU1LjY2Myw0MC42NTUgNTcuMjQ3LDM5LjA4MiAzNi4yMzMsMTguMDggNDEuODEsMTIuNDg5IDYyLjY3NiwzMy4zNSIKICAgaWQ9InBhdGgxOCIgLz4KCgkJPHBhdGgKICAgc3R5bGU9ImZpbGw6IzVkODdhMSIKICAgZD0ibSA0OS43MDcsMTcuMTEzIGMgLTMuNTE4LC0zLjUyMyAtMy41MTgsLTkuMjIxIDAsLTEyLjc0NSAzLjUyMSwtMy41MDcgOS4yMjcsLTMuNTIzIDEyLjc1LDAgTCA4My4zMjIsMjUuMjMzIDc3LjczNywzMC44MTIgNTYuNzIzLDkuNzk3IDU1LjE0NywxMS4zODUgNzYuMTUsMzIuMzk5IDcwLjU3MiwzNy45NTkgNDkuNzA3LDE3LjExMyIKICAgaWQ9InBhdGgyMCIgLz4KCgk8L2c+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4K");
+      background-repeat:no-repeat;
+      background-size:100vw 100vh;
+      background-attachment:fixed;
+    }
+    h1 {position:sticky;top:0;width:fit-content;text-decoration:dashed underline #CCCCCC 8px;padding-right:0.2ex;z-index:1}
+    ol > li {padding-bottom:1em}
+    ol > li::marker {font-weight:bold}
+    h2 {font-variant:small-caps;font-size:large;font-weight:normal;display:inline}
+    blockquote,summary samp{background-color:rgba(0,0,0,0.75);color:#FFF}
+    blockquote > samp {color:#FFF}
+    blockquote {overflow-x:clip;overflow-clip-margin:9vw;padding-left:0.5ex;margin-top:0.5ex;white-space:pre}
+    blockquote span {color:yellow}
+    summary {list-style-image: url("data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyZXgiIGhlaWdodD0iMmV4Ij48c3R5bGU+DQovKiA8IVtDREFUQVsgKi8NCnN2Z3tiYWNrZ3JvdW5kLWltYWdlOnJhZGlhbC1ncmFkaWVudCh3aGl0ZSx3aGl0ZSxyZ2JhKDI1NSwyNTUsMjU1LDApLHJnYmEoMjU1LDI1NSwyNTUsMCkscmdiYSgyNTUsMjU1LDI1NSwwKSl9DQovKiBdXT4gKi8NCjwvc3R5bGU+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJjZW50cmFsIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjJleCI+4piQPC90ZXh0Pg0KPHRleHQgeD0iNjUlIiB5PSIzMyUiIGRvbWluYW50LWJhc2VsaW5lPSJjZW50cmFsIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjIuNWV4IiBmaWxsPSIjMDA3NzAwIj7inJM8L3RleHQ+DQo8L3N2Zz4=")}
+    summary:focus {list-style-image: unset;list-style-type: "\27A4\00A0\00A0";}
+    li:focus-within > details:focus-within ~ details > summary,li:focus-within ~ li summary,ol:not(:focus-within) summary {list-style-image: url("data:image/svg+xml;charset=utf-8;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyZXgiIGhlaWdodD0iMmV4Ij48c3R5bGU+DQovKiA8IVtDREFUQVsgKi8NCnN2Z3tiYWNrZ3JvdW5kLWltYWdlOnJhZGlhbC1ncmFkaWVudCh3aGl0ZSx3aGl0ZSxyZ2JhKDI1NSwyNTUsMjU1LDApLHJnYmEoMjU1LDI1NSwyNTUsMCkscmdiYSgyNTUsMjU1LDI1NSwwKSl9DQovKiBdXT4gKi8NCjwvc3R5bGU+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJjZW50cmFsIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjJleCI+4piQPC90ZXh0Pjwvc3ZnPg==");}
+    summary[tabindex="0"][property$="t"]:hover {list-style-image: unset;list-style-type: "\25A0\00A0\00A0";}
+    li:focus-within > h2 {filter:drop-shadow(0.09ex 0.09ex 0.12ex);text-decoration:white 1px underline;animation: 0.5s infinite alternate underpulse}
+    details[open] > summary:active {pointer-events:none}
+    summary:focus::marker,summary:hover::marker {animation: 0.5s infinite alternate pulsate}
+    @keyframes pulsate {
+      from {color:#008;}
+      to {color:#FFF;}
+    }
+    @keyframes underpulse {
+      from {text-decoration-style:solid;}
+      25% {text-decoration-style:solid;}
+      to {text-decoration-style:dotted;}
+    }
+    </style>
+</head>
+<body><main vocab="http://schema.org/" typeof="HowTo">
+	<h1 property="name">Sun Oracle Database Appliance X3-2</h1>
+<ol>
+  <li typeof="HowToSection" property="step"><h2 property="name">Start the console session.</h2>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text" autofocus>Plug in serial cable to "SVR MGMT" port of device from PC COM1 port</summary>
+    </details>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Open PuTTY and select "Serial" connection type, leave baud rate (Speed) and other settings as default. If you see garbled output then the speed was altered from default, so test <a href="https://web.archive.org/web/20220507040918id_/https://lucidar.me/en/serialib/most-used-baud-rates-table/">other baud rates</a> until you match the changed rate and get normal text.</summary>
+    </details>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Remove the main top cover by holding down the green button and sliding it in the direction of the indicator arrows.</summary>
+    </details>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Remove the middle of the three network-related cards (lift the lever before pulling the indicated bar to unplug it) to access the main circuit board underneath it.</summary>
+    </details>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Using a two-pin bridge, short the jumper pins labelled “CLR SP PWD” and leave them connected.</summary>
+    </details>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Re-insert the network card to where it was removed.</summary>
+    </details>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Plug power into device.</summary>
+    </details>
+  </li>
+  <li typeof="HowToSection" property="step"><h2 property="name">Erase Configuration.</h2>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">At the <samp>Preboot> </samp>&nbsp;prompt type the <em>host clearcmos</em> command:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+Booting linux in 3 seconds...
+Un-Protect Flash Bank # 1
+flctrl: Recovery U-Boot (r74387) at 0x20040000 is valid (min. r66380).
+flctrl: Current U-Boot is not the main one.
+bootpkg: Not safe to boot ILOM (stat=1). Check Preboot "vers" command,
+        then reload ILOM ("net flash") as needed.
+
+                        ILOM Pre-boot Menu
+                        ------------------
+Type "h" and [Enter] for a list of commands, or "?" [Enter] for
+command-line key bindings.  Type "h cmd" for summary of 'cmd' command.
+
+Can not boot to ILOM, use 'net flash' to reflash ILOM.
+Service mode enabled; check_physical_presence = 'no ;mfgmode'.
+This is Recovery U-Boot.  Use "vers all" to check flash images.
+
+Preboot> <span>host clearcmos</span>
+  The host is OFF(S5) (hostWantsPwr=0, powerGood=0,
+        allowPwrOn=0|1, outOfReset=0, fatalError=0).
+  Clearing signal for prior SP errors... OK.
+  Operating Clear-CMOS jumper electronically.
+        </samp></blockquote>
+    </details>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Type the <em>unconfig all</em> command and confirm with <em>y</em>:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+Preboot> <span>unconfig all</span>
+  This command erases the writeable ILOM filesystems in flash, and it reverts
+  most pre-boot settings to defaults.  (See "help unconfig".)
+
+ Enter 'y[es]' to continue: [no] <span>y</span>
+  Erasing flash filesystems.
+
+................................................................................ done
+Erased 80 sectors
+        </samp></blockquote>
+    </details>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Further output will return you to the prompt once the erasure completes. Type the <em>host hard-off</em> command and unplug power from the device:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+Done resetting configuration.
+  Optionally use "edit" or "net config" to change settings.
+  Use "vers" to check that images are intact, then "reset" to reboot.
+Preboot> <span>host hard-off</span>
+        </samp></blockquote>
+    </details>
+  </li>
+  <li typeof="HowToSection" property="step"><h2 property="name">Check you can log in with the default authentication.</h2>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Remove the bridge from the jumper pins you put there earlier, this involves removing and replacing the same card again.</summary>
+    </details>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">If the baud rate was different from the default, right-click PuTTY's titlebar -> Change Settings, in that dialog go to Connections -> Serial and change the speed back to 9600 baud.</summary>
+    </details>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Plug power back in and allow the boot process to complete prompting you to log in.</summary>
+    </details>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Type <em>root</em> for the login and <em>changeme</em> for the password. You are done when the ILOM starts, taking you to the <samp>-></samp> prompt:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+Starting HT sign on daemon: htsignond . Done
+Starting webgo Web Server: webgo . Done
+Starting Detection/Diagnosis After System Boot: dasboot  Done
+Starting Servicetags discoverer: stdiscoverer.
+Starting Servicetags listener: stlistener.
+Starting Dynamic FRUID Daemon: dynafrud  Done
+
+ORACLESP-1333FML032 login: <span>root</span>
+Password: <span>changeme</span>
+Detecting screen size; please wait...done
+
+Oracle(R) Integrated Lights Out Manager
+
+Version 3.2.7.32.a r112581
+
+Copyright (c) 2016, Oracle and/or its affiliates. All rights reserved.
+
+Warning: password is set to factory default.
+
+Warning: HTTPS certificate is set to factory default.
+
+Hostname: ORACLESP-1333FML032
+
+->
+        </samp></blockquote>
+    </details>
+  </li>
+  <li typeof="HowToSection" property="step"><h2 property="name">Copy all the output from the session into your records.</h2>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Right-click PuTTY's titlebar, from that dropdown menu click on "Copy All to Clipboard"</summary>
+    </details>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Open the file of record certifying the deconfiguration of this device and use <em>CTRL V</em> to paste all the output from PuTTY into that file. Formatting the text with a fixed-width font helps it look more readable.</summary>
+    </details>
+  </li>
+  <li typeof="HowToSection" property="step"><h2 property="name">End the session.</h2>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Close PuTTy.</summary>
+    </details>
+  </li>
+</ol>
+</main></body></html>

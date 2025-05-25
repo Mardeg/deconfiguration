@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Licensed under the Academic Free License version 3.0
+	- Any copyright dedicated to the public domain -->
+	<head vocab="https://schema.org/DigitalDocument">
+		<link rel="license nofollow schema:license" href="https://spdx.org/licenses/AFL-3.0">
+		<link rel="license nofollow schema:license" href="https://creativecommons.org/publicdomain/zero/1.0/">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Security-Policy" content="base-uri 'self'; form-action 'none'; object-src 'none'; media-src 'self' data:; img-src 'self' data:; child-src blob: https://web.archive.org; style-src 'self' 'unsafe-inline'; connect-src 'self' blob: data:">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title property="headline">Juniper SRX240</title>
+		<meta name="description" content="How to factory reset instructions tutorial guide">
+		<link rel="icon" href="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn5K7PC90ZXh0Pjwvc3ZnPg==">
+    <style>
+    :root,h1 {background-color:#CCC}
+    :root {
+      color:#000;
+      background-image:url("data:image/svg+xml;charset=utf-8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgdmlld0JveD0iMCAwIDE5MC4wMjM3NCA0NS4yNDM3NDgiCiAgIHZlcnNpb249IjEuMSIKICAgaWQ9InN2ZzQyOSIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8ZwogICAgIGZpbGwtb3BhY2l0eT0iMC4xIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0wLjIzODEyNjIsLTM5LjI5MDYyNSkiPgogICAgPGcKICAgICAgIGlkPSJnNTUiCiAgICAgICB0cmFuc2Zvcm09Im1hdHJpeCgwLjI2NDU4MzMzLDAsMCwwLjI2NDU4MzMzLDAuMjM4MTI2MiwzOS4yOTA2MjUpIj4KCQkJCTxnCiAgIGlkPSJnNDUiPgoJCQkJCTxnCiAgIGlkPSJnMjkiPgoJCQkJCQk8cGF0aAogICBkPSJtIDcwNS41LDAuNSBjIC01My40LDAgLTU1LjcsMjMuOSAtNTUuNyw1Ny43IHYgODIuOSBoIDEyLjYgViA1OC4yIGMgMCwtMjUuNSAtMSwtNDUuOSA0My4xLC00NS45IDQuNywwIDguOSwwLjIgMTIuNywwLjcgViAxIEMgNzE0LjMsMC43IDcxMC4xLDAuNSA3MDUuNSwwLjUgWiIKICAgaWQ9InBhdGgyNyIgLz4KCgkJCQkJPC9nPgoKCQkJCQk8cGF0aAogICBkPSJNIDgyLjIsODcuMiBWIDMuMyBoIDEyLjkgdiA4NC4yIGMgMCwyNC4yIC0wLjIsNDQuNiA0NC4xLDQ0LjYgNDQuMSwwIDQzLjEsLTIwLjQgNDMuMSwtNDUuOSBWIDMuMyBoIDEyLjYgdiA4Mi45IGMgMCwzMy44IC0yLjMsNTcuNyAtNTUuNyw1Ny43IC01My43LDAgLTU3LC0yMy45IC01NywtNTYuNyB6IgogICBpZD0icGF0aDMxIiAvPgoKCQkJCQk8cGF0aAogICBkPSJtIDMyOC45LDU3LjIgdiA4My45IEggMzE2IFYgNTcgYyAwLC0yNC4yIDAuMywtNDQuNiAtNDQuMSwtNDQuNiAtNDQuMSwwIC00My4xLDIwLjQgLTQzLjEsNDUuOSB2IDgyLjkgaCAtMTIuNiB2IC04MyBjIDAsLTMzLjggMi4zLC01Ny43IDU1LjcsLTU3LjcgNTMuNywwIDU3LDI0IDU3LDU2LjcgeiIKICAgaWQ9InBhdGgzMyIgLz4KCgkJCQkJPHBhdGgKICAgZD0ibSAzNTIuMywzLjUgaCAxMi4zIHYgMTM3LjYgaCAtMTIuMyB6IgogICBpZD0icGF0aDM1IiAvPgoKCQkJCQk8cGF0aAogICBkPSJtIDM4Ny43LDMuNSBoIDY0LjQgYyAzMiwwIDQ2LjQsMTUuOSA0Ni40LDQ0LjEgMCwyOC40IC0xNC4zLDQ1LjcgLTQ2LjYsNDUuNyBIIDQwMCB2IDQ3LjggSCAzODcuNyBaIE0gNDUyLjMsODEgYyAyMi4zLDAgMzMuMywtMTAuOCAzMy4zLC0zMi44IDAsLTIxLjkgLTExLjksLTMyLjMgLTMzLjksLTMyLjMgSCA0MDAgViA4MSBaIgogICBpZD0icGF0aDM3IiAvPgoKCQkJCQk8cGF0aAogICBkPSJNIDUxMi45LDcxLjggQyA1MTIuOSwzMS4yIDUyNC41LDAgNTc2LjQsMCBjIDUzLjcsMCA1NS41LDM2IDU1LjIsNzQuMSBIIDUyNS4zIGMgMC4zLDMzLjUgOC42LDU4LjUgNTIuMiw1OC41IDIzLjIsMCAzMy44LC02LjMgNDUuMSwtMTQuNiBsIDcuMSw5LjMgYyAtMTIuNiw5LjMgLTI3LjUsMTYuNiAtNTIuMiwxNi42IC01NC41LDAgLTY0LjYsLTMxLjUgLTY0LjYsLTcyLjEgeiBtIDEyLjcsLTkuMyBoIDkzLjggYyAtMS4zLC0yNy41IC0zLC01MC45IC00My4xLC01MC45IC0zOC42LDAgLTQ5LjIsMjAuOSAtNTAuNyw1MC45IHoiCiAgIGlkPSJwYXRoMzkiIC8+CgoJCQkJCTxnCiAgIGlkPSJnNDMiPgoJCQkJCQk8cGF0aAogICBkPSJtIDQuOCwxNzEgYyA1My40LDAgNTUuNywtMjMuOSA1NS43LC01Ny43IFYgMy4zIEggNDcuOSB2IDExMCBjIDAsMjUuNSAxLDQ1LjkgLTQzLjEsNDUuOSAtMS43LDAgLTMuMywwIC00LjgsLTAuMSBWIDE3MSBjIDEuNiwwIDMuMSwwIDQuOCwwIHoiCiAgIGlkPSJwYXRoNDEiIC8+CgoJCQkJCTwvZz4KCgkJCQk8L2c+CgoJCQkJPGcKICAgaWQ9Imc1MyI+CgkJCQkJCgkJCQkJPGcKICAgaWQ9Imc1MSI+CgkJCQkJCQoJCQkJCTwvZz4KCgkJCQk8L2c+CgoJCQk8L2c+CiAgPC9nPgo8L3N2Zz4K");
+      background-repeat:no-repeat;
+      background-size:100vw 100vh;
+      background-attachment:fixed;
+    }
+    h1 {position:sticky;top:0;width:fit-content;text-decoration:dashed underline #CCCCCC 8px;padding-right:0.2ex;z-index:1}
+    ol > li {padding-bottom:1em}
+    ol > li::marker {font-weight:bold}
+    h2 {font-variant:small-caps;font-size:large;font-weight:normal;display:inline}
+    blockquote,summary samp{background-color:rgba(0,0,0,0.75);color:#FFF}
+    blockquote > samp {color:#FFF}
+    blockquote {overflow-x:clip;overflow-clip-margin:9vw;padding-left:0.5ex;margin-top:0.5ex;white-space:pre}
+    blockquote span {color:yellow}
+    summary {list-style-image: url("data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyZXgiIGhlaWdodD0iMmV4Ij48c3R5bGU+DQovKiA8IVtDREFUQVsgKi8NCnN2Z3tiYWNrZ3JvdW5kLWltYWdlOnJhZGlhbC1ncmFkaWVudCh3aGl0ZSx3aGl0ZSxyZ2JhKDI1NSwyNTUsMjU1LDApLHJnYmEoMjU1LDI1NSwyNTUsMCkscmdiYSgyNTUsMjU1LDI1NSwwKSl9DQovKiBdXT4gKi8NCjwvc3R5bGU+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJjZW50cmFsIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjJleCI+4piQPC90ZXh0Pg0KPHRleHQgeD0iNjUlIiB5PSIzMyUiIGRvbWluYW50LWJhc2VsaW5lPSJjZW50cmFsIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjIuNWV4IiBmaWxsPSIjMDA3NzAwIj7inJM8L3RleHQ+DQo8L3N2Zz4=")}
+    summary:focus {list-style-image: unset;list-style-type: "\27A4\00A0\00A0";}
+    li:focus-within > details:focus-within ~ details > summary,li:focus-within ~ li summary,ol:not(:focus-within) summary {list-style-image: url("data:image/svg+xml;charset=utf-8;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyZXgiIGhlaWdodD0iMmV4Ij48c3R5bGU+DQovKiA8IVtDREFUQVsgKi8NCnN2Z3tiYWNrZ3JvdW5kLWltYWdlOnJhZGlhbC1ncmFkaWVudCh3aGl0ZSx3aGl0ZSxyZ2JhKDI1NSwyNTUsMjU1LDApLHJnYmEoMjU1LDI1NSwyNTUsMCkscmdiYSgyNTUsMjU1LDI1NSwwKSl9DQovKiBdXT4gKi8NCjwvc3R5bGU+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJjZW50cmFsIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjJleCI+4piQPC90ZXh0Pjwvc3ZnPg==");}
+    summary[tabindex="0"][property$="t"]:hover {list-style-image: unset;list-style-type: "\25A0\00A0\00A0";}
+    li:focus-within > h2 {filter:drop-shadow(0.09ex 0.09ex 0.12ex);text-decoration:white 1px underline;animation: 0.5s infinite alternate underpulse}
+    details[open] > summary:active {pointer-events:none}
+    summary:focus::marker,summary:hover::marker {animation: 0.5s infinite alternate pulsate}
+    @keyframes pulsate {
+      from {color:#008;}
+      to {color:#FFF;}
+    }
+    @keyframes underpulse {
+      from {text-decoration-style:solid;}
+      25% {text-decoration-style:solid;}
+      to {text-decoration-style:dotted;}
+    }
+    </style>
+</head>
+<body><main vocab="http://schema.org/" typeof="HowTo">
+	<h1 property="name">Juniper SRX240</h1>
+<ol>
+  <li typeof="HowToSection" property="step"><h2 property="name">Start the console session.</h2>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text" autofocus>Plug in either a serial cable or an ethernet cable with RS-232 adapters at both ends to console port of device from PC COM1 port</summary>
+    </details>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Open PuTTY and select "Serial" connection type, leave baud rate (Speed) and other settings as default.</summary>
+    </details>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Plug power into device and if a power button exists, turn it on.</summary>
+    </details>
+  </li>
+  <li typeof="HowToSection" property="step"><h2 property="name">Boot into single-user mode</h2>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">When prompted the <b>SECOND</b> time press the <em>space bar</em> for commandline access ensuring you are at the <samp>loader> </samp>&nbsp;prompt:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+Hit [Enter] to boot immediately, or space bar for command prompt.
+
+
+Type '?' for a list of commands, 'help' for more detailed help.
+loader>
+        </samp></blockquote>
+    </details>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Type the <em>watchdog disable</em> then <em>boot -s</em> commands:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+loader> <span>watchdog disable</span>
+loader> <span>boot -s</span>
+        </samp></blockquote>
+    </details>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Further output will be followed by a prompt where you type <em>recovery</em>:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+System watchdog timer disabled
+Enter full pathname of shell or 'recovery' for root password recovery or RETURN
+for /bin/sh: <span>recovery</span>
+        </samp></blockquote>
+    </details>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" typeof="HowToTip" property="itemListElement"><span property="text">Further output will take you to the <samp>root@xxxxx> </samp>&nbsp;prompt, the xxxxx being whatever name the machine was given.</span></summary>
+    </details>
+  </li>
+  <li typeof="HowToSection" property="step"><h2 property="name">Erase all data and reboot to check for licenses.</h2>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Type <em>edit</em> to enter configuration mode and then type the <em>load factory-default</em> and <em>delete system commit factory-settings</em> commands:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+Starting CLI ...
+root@xxxxx> <span>edit</span>
+Entering configuration mode
+
+[edit]
+root@xxxxx# <span>load factory-default</span>
+warning: activating factory configuration
+root@xxxxx# <span>delete system commit factory-settings</span>
+        </samp></blockquote>
+    </details>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">As a precaution set the password for username <em>root</em> to <em>juniper1</em> before returning from configuration mode:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+[edit]
+root@xxxxx# <span>set system root-authentication plain-text-password</span>
+New password: <span>juniper1</span>
+Retype new password: <span>juniper1</span>
+
+[edit]
+root@xxxxx# <span>commit and-quit</span>
+
+commit complete
+Exiting configuration mode
+
+root@xxxxx>
+        </samp></blockquote>
+    </details>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Type <em>request system zeroize media</em> and confirm with <em>yes</em> to erase all data including the password you just set. If this process is interrupted by a system freeze or power being cut in some way, log back in as <em>root</em> with the <em>juniper1</em> password to get back to this step upon powering back up.</summary>
+        <blockquote role="log" aria-label="example"><samp>
+root@xxxxx> <span>request system zeroize media</span>
+warning: System will be rebooted and may not boot without configuration
+Erase all data, including configuration and log files? [yes,no] (no) <span>yes</span>
+
+warning: zeroizing re0
+
+root@xxxxx> Waiting (max 60 seconds) for system process `vnlru' to stop...done
+Waiting (max 60 seconds) for system process `vnlru_mem' to stop...done
+Waiting (max 60 seconds) for system process `bufdaemon' to stop...done
+Waiting (max 60 seconds) for system process `syncer' to stop...
+Syncing disks, vnodes remaining...1 1 1 1 0 0 0 0 done
+
+syncing disks... All buffers synced.
+Uptime: 6m25s
+Rebooting...
+cpu_reset: Stopping other CPUs
+        </samp></blockquote>
+    </details>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Allow the system to boot up to the <samp>login: </samp>&nbsp;prompt and type <em>root</em> which without needing a password will bring you to the <samp>root@% </samp>&nbsp;prompt:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+Amnesiac (ttyu0)
+
+login: <span>root</span>
+
+--- JUNOS 12.1X44-D30.4 built 2014-01-11 03:56:31 UTC
+
+root@%
+        </samp></blockquote>
+    </details>
+    <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Type <em>cli</em> to enter the command line interface then type the <em>show system license</em> command:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+root@% <span>cli</span>
+root> <span>show system license</span>
+License usage:
+                                  Licenses    Licenses    Licenses    Expiry
+  Feature name                        used   installed      needed
+  dynamic-vpn                            0           2           0    permanent
+  ax411-wlan-ap                          0           2           0    permanent
+  
+Licenses installed: none
+        </samp></blockquote>
+    </details>
+  </li>
+  <li typeof="HowToSection" property="step"><h2 property="name">Copy all the output from the session into your records.</h2>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Right-click PuTTY's titlebar, from that dropdown menu click on "Copy All to Clipboard"</summary>
+    </details>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Open the file of record certifying the deconfiguration of this device and use <em>CTRL V</em> to paste all the output from PuTTY into that file. Formatting the text with a fixed-width font helps it look more readable.</summary>
+    </details>
+  </li>
+  <li typeof="HowToSection" property="step"><h2 property="name">End the session.</h2>
+    <details typeof="HowToStep" property="itemListElement">
+      <summary tabindex="0" property="text">Close PuTTy.</summary>
+    </details>
+  </li>
+</ol>
+</main></body></html>
