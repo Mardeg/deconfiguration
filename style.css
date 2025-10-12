@@ -185,8 +185,8 @@
       }
       h1:not(:hover),h1 > span:not(:hover) {animation-play-state: paused}
       summary:hover::marker {animation: 0.5s infinite alternate pulsate}
-      #items > output {content: counter(items)}
-      #brands > output {content: counter(brands)}
+      #items::after > output {content: counter(items)}
+      #brands::after > output {content: counter(brands)}
       #items,#brands{
         display:block;
         text-align:center;
