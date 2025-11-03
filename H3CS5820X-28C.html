@@ -188,6 +188,11 @@ User interface aux0 is available.
     <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
       <summary tabindex="0" property="text">In case there's a backup file, type the <em>reset saved-configuration backup</em> command and type <em>y</em> to confirm:</summary>
         <blockquote role="log" aria-label="example"><samp>
+&lt;H3C><span>system-view</span>
+System View: return to User View with Ctrl+Z.
+[H3C]<span>undo password-recovery enable</span>
+ The command will disable the password recovery function. Continue? [Y/N]:<span>y</span>
+[H3C]
 &lt;H3C><span>reset saved-configuration backup</span>
 The saved configuration file will be erased. Are you sure? [Y/N]:<span>y</span>
 Configuration file in flash is being cleared.
@@ -211,7 +216,7 @@ MainBoard:
     <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
       <summary tabindex="0" property="text">Type <em>reboot</em> and follow prompts to continue:</summary>
         <blockquote role="log" aria-label="example"><samp>
-&lt;H3C>reboot
+&lt;H3C><span>reboot</span>
  Start to check configuration with next startup configuration file, please wait.........DONE!
  This command will reboot the device. Current configuration will be lost, save current configuration? [Y/N]:<span>n</span>
  This command will reboot the device. Continue? [Y/N]:<span>y</span>
@@ -479,6 +484,30 @@ Please input the file number to change: <span>2</span>
 The file you selected is iccrunning.cfg,Delete it? (Y/N):<span>Y</span>
 Deleting...Done!
         </samp></blockquote>
+      </details>
+      <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
+        <summary property="text">Type <em>5</em> to Restore to Factory Default Configuration:</summary>
+        <blockquote role="log" aria-label="example"><samp>
+   BOOT MENU
+
+1. Download application file to flash
+2. Select application file to boot
+3. Display all files in flash
+4. Delete file from flash
+5. Restore to Factory Default Configuration
+6. Enter BootRom upgrade menu
+7. Skip current system configuration
+8. Set BootRom password recovery
+9. Set switch startup mode
+0. Reboot
+
+Enter your choice(0-9): <span>5</span>
+
+Because the password recovery capability is disabled, this operation can cause the configuration files to be deleted, and the system will start up with factory defaults.
+Are you sure to continue?[Y/N]<span>y</span>
+Setting......done!
+
+	</samp></blockquote>
       </details>
       <details open aria-expanded="true" typeof="HowToStep" property="itemListElement">
         <summary property="text">Type <em>0</em> to reboot the system:</summary>
