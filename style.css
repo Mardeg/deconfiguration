@@ -8,7 +8,6 @@
         --alink:light-dark(blue,lightblue);
         --avisited:light-dark(purple,#8467D7);
         /* LIGHT mode */
-        --lcontent: "DARK";
         --bgimage: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("CiscoXmasTrees.jpg");
       }
       body:has(#d:checked), body:has(#d:checked) * { /* DARK mode */
@@ -17,12 +16,10 @@
         --sbgcolor: rgba(0,0,0,0.75);
         --alink: lightblue;
         --avisited: #8467D7;
-        --lcontent: "LIGHT";
         --bgimage: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("CiscoXmasTrees.jpg");
       }
 @media (prefers-color-scheme: dark) {
       * {
-        --lcontent: "LIGHT";
         --bgimage: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("CiscoXmasTrees.jpg");
       }
       body:has(#d:checked), body:has(#d:checked) * { /* LIGHT mode */
@@ -31,7 +28,6 @@
         --sbgcolor: rgba(255,255,255,0.75);
         --alink:blue;
         --avisited:purple;
-        --lcontent: "DARK";
         --bgimage: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("CiscoXmasTrees.jpg");
       }
 }
@@ -40,29 +36,57 @@
         display:inline-block;
         line-height:0;
       }
-      label[for="d"] {
-        opacity:0.67;
-        background-color:rgba(128,128,128,0.5);
-        position:fixed;
-        top:7ex;
-        right:1ex;
-        padding-left:0.3ex;
-        padding-right:0.3ex;
-        border-radius:0.3ex;
-        background-image:linear-gradient(135deg,rgba(0,0,0,0),rgba(0,0,0,0),rgba(255,255,255,0.5),rgba(0,0,0,0),rgba(0,0,0,0));
-        background-position:-900%;
-        background-size:90% 100%;
-        background-repeat:no-repeat;
+	label[for="d"] {
+		font-size: 17px;
+		position: fixed;
+		display: inline-block;
+		width: 64px;
+		height: 34px;
+		top:12ex;
+		right:1ex;
+	}
+	.slider {
+	  position: absolute;
+	  cursor: pointer;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  background-color: #53709C;
+	  transition: .4s;
+	  border-radius: 30px;
+	  font-size: 23px;
+          background-image:linear-gradient(135deg,rgba(0,0,0,0),rgba(0,0,0,0),rgba(255,255,255,0.5),rgba(0,0,0,0),rgba(0,0,0,0));
+          background-position:-900%;
+          background-size:90% 100%;
+          background-repeat:no-repeat;
+	      &:hover {
+		animation: 0.5s linear 1 glint;
+		}
+	}
 
-        &:hover{
-          animation: 0.5s linear 1 glint;
-        }
-      }
+	.slider:before {
+	  position: absolute;
+	  content: "";
+	  height: 30px;
+	  width: 30px;
+	  border-radius: 20px;
+	  left: 2px;
+	  bottom: 2px;
+	  z-index: 2;
+	  background-color: #A0A0A0;
+	  transition: .4s;
+	}
+	#d:focus + label > .slider {
+	  box-shadow: 0 0 1px #183153;
+	}
+	#d:checked + label > .slider:before {
+	  transform: translateX(30px);
+	}
       @keyframes glint {
         from {background-position:-900%;}
         to {background-position:900%}
       }
-      label[for="d"]::after {content: var(--lcontent);} /* DARK or LIGHT text */
       :root {
         color-scheme: light dark;
         background-color:#888;
