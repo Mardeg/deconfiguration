@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Licensed under the Academic Free License version 3.0
+	- Any copyright dedicated to the public domain -->
+	<head>
+		<link rel="license" href="https://spdx.org/licenses/AFL-3.0">
+		<link rel="license" href="https://creativecommons.org/publicdomain/zero/1.0/">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Security-Policy" content="form-action 'none'; object-src 'none'; media-src 'self' data:; img-src 'self' data: https://web.archive.org; child-src blob: https://web.archive.org; style-src 'self' 'unsafe-inline'; connect-src 'self' blob: data:">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Compact Flash card erasure setup</title>
+	  <link rel="preload" href="https://web.archive.org/web/20230317145312id_/https://svgur.com/i/rDy.svg" as="image">
+		<link rel="icon" href="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn5K7PC90ZXh0Pjwvc3ZnPg==">
+    <style>
+    :root {background-color:#CCC;color:#000}
+    table {border:2px solid black;border-spacing:0}
+    table > tbody > tr:nth-of-type(even) {background-color:#8CC}
+    table > tbody > tr:nth-of-type(odd) {background-color:#D2B48C}
+    table > tbody > tr > th,table > tfoot > tr > th {background-color: lightgreen}
+    caption {background-color:#FFF;position:sticky;top:0;width:fit-content;margin-left:auto;margin-right:0;visibility:hidden;}
+    caption > nav > a:not(:hover) {text-decoration:none}
+    caption > nav > a:focus-visible {text-decoration:underline}
+    td,th{padding-left:1ex;padding-right:1ex;border:1px solid black}
+    td:nth-of-type(2){padding:0;line-height:0}
+    th {font-size:x-large}
+    img {width:33vw}
+    img[alt^="Crestron"] {transition:opacity 1s}
+    img[alt^="Crestron"]:hover {opacity:0}
+    input[type="checkbox"] {position:sticky;top:3ex;visibility:hidden}
+    label[for="tpa"] {cursor:pointer;width:100%;display:inline-block}
+    label[for="tpa"]::after {content: "expand"}
+    input[type="checkbox"]:checked + table > thead > tr > th > label[for="tpa"]::after {content: "collapse"}
+    a {color:#FFF;background-color:rgba(0,0,0,0.03);font-size:3ex;font-weight:900;text-shadow:black .2ex .2ex .5ex,black .2ex .2ex .5ex,black .2ex .2ex .5ex}
+    a:visited {color:#0F0;}
+    a:not(:hover) {text-decoration: none;}
+    #tpa:not(:checked) ~ table #pa{background-color:#CCC}
+    #tpa:not(:checked) ~ table > tbody > tr.pa > td > img{opacity:0;width:0;transform:translate(0,-200%)}
+    #tpa:not(:checked) ~ table > tbody > tr.pa > td{ font-size: 0 }
+    #tpa:not(:checked) ~ table > tbody > tr > th > label[for="tpa"]{ font-weight: normal }
+@supports (not (-webkit-hyphens:none)) and (not (-moz-appearance:none)) and (list-style-type:"*") {
+    #tpa:not(:checked) ~ table > tbody > tr.pa > td > img{opacity:0;width:0;height:0;transform:translate(0,-200%)}
+}
+    td > img {transition: width 1s, transform 1s 1s, opacity 0.5s}
+    td {overflow:hidden; transition: font-size 0.2s 0.5s}
+    td:nth-child(2):hover {border-color:white;box-shadow:inset 0 0 1px 2px white}
+    </style>
+</head>
+<body>
+	<h1>Compact Flash card erasure setup</h1>
+	<p>Until now we have been unable to use Blancco to erase (first gen) CF cards as they are in networking devices with no video output, so those cards have been destroyed. The problem this brings is that CF cards are no longer being manufactured so when we sell those devices without their CF cards our customers have trouble replacing them with whatever they can buy which is increasingly expensive as the remaining stockpile sellers have reduces and will eventually run out.</p>
+	<p>This page documents a setup to successfully erase CF cards using the existing Blancco RPD USB bootdrives we use for other storage media, providing the same erasure reports for Makor.</p>
+	<h2>Video of the setup in action</h2>
+	<video controls src="CFcardErasing.mp4"></video>
+	<h2>Materials needed for each warehouse</h2>
+	<p>The following table lists all the necessary materials (minus a monitor with a Display Port) to get this setup running. These items are what I have used but you can substitute some (towards the end) with matching items you already have on site.</p>
+<input id="tpa" type="checkbox">
+<table role="main" vocab="https://schema.org/" typeof="HowTo">
+  <thead>
+    <tr><th colspan="5" id="pa"><label for="tpa">Materials - click to </label></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><th>Description</th><th>Photo</th><th>Amazon</th><th>eBay</th><th>Other</th>
+    </tr>
+    <tr property="tool" typeof="HowToTool" class="pa">
+      <td property="name">ZimaBlade 3760</td>
+      <td><img property="image" alt="ZimaBlade 3760" loading="lazy" src="zimablade.jpg"></td>
+      <td></td>
+      <td></td>
+      <td typeof="Product"><a property="model" href="https://shop.zimaspace.com/products/zimablade-single-board-server-for-cyber-native?variant=47722451697956">‎$96.65</a></td>
+    </tr>
+    <tr property="tool" typeof="HowToTool" class="pa">
+      <td property="name">SATA Y-Cable</td>
+      <td><img property="image" alt="SATA Y-cable" loading="lazy" src="ycable.webp"></td>
+      <td></td>
+      <td></td>
+      <td typeof="Product"><a property="model" href="https://shop.zimaspace.com/products/sata-y-cable-for-zimaboard-2-5-inch-hdd-3-5-inch-hdd-raid-free-nas-unraid">$5.46</a></td>
+    </tr>
+    <tr property="tool" typeof="HowToTool" class="pa">
+      <td property="name">PCIe to IDE adapter</td>
+      <td><img property="image" alt="PCIe to IDE Adapter" loading="lazy" src="PCIEtoIDE.jpg"></td>
+      <td typeof="Product"><a property="model" href="https://www.amazon.com.au/dp/B0DRPTRRR4">‎$29.42</a></td>
+      <td typeof="Product"><a property="model" href="https://www.ebay.com.au/itm/178134108560">$40.92</a></td>
+      <td></td>
+    </tr>
+    <tr property="tool" typeof="HowToTool" class="pa">
+      <td property="name">40pin data cable</td>
+      <td><img property="image" alt="40pin data cable" loading="lazy" src="CFcardData.jpg"></td>
+      <td typeof="Product"><a property="model" href="https://www.amazon.com.au/dp/B0DK4MRNVR">‎$12.72</a></td>
+      <td typeof="Product"><a property="model" href="https://www.ebay.com.au/itm/287285043743">$14.18</a></td>
+      <td></td>
+    </tr>
+    <tr property="tool" typeof="HowToTool" class="pa">
+      <td property="name">CF card adapter</td>
+      <td><img property="image" alt="CF card adapter" loading="lazy" src="CFcardAdapter.jpg"></td>
+      <td typeof="Product"><a property="model" href="https://www.amazon.com.au/dp/B0F93P19W1">‎$18.39</a></td>
+      <td typeof="Product"><a property="model" href="https://www.ebay.com.au/itm/406678688063">‎$30.87</a></td>
+      <td></td>
+    </tr>
+    <tr property="tool" typeof="HowToTool" class="pa">
+      <td property="name">CF card power cable</td>
+      <td><img property="image" alt="CF card power cable" loading="lazy" src="CFcardPower.jpg"></td>
+      <td typeof="Product"><a property="model" href="https://www.amazon.com.au/dp/B0759PLS4P">‎$20.79</a></td>
+      <td typeof="Product"><a property="model" href="https://www.ebay.com.au/itm/206057609995">‎$20.06</a></td>
+      <td></td>
+    </tr>
+    <tr property="tool" typeof="HowToTool" class="pa">
+      <td property="name">Tunghey Type C USB Male to DC 5.5x2.1mm Female Connector</td>
+      <td><img property="image" alt="Tunghey Type C USB Male to DC 5.5x2.1mm Female Connector" loading="lazy" src="USBCtoDC.jpg"></td>
+      <td typeof="Product"><a property="model" href="https://www.amazon.com.au/dp/B0CC4LSJ43">‎$12.99</a></td>
+      <td typeof="Product"><a property="model" href="https://www.ebay.com.au/itm/389015932044">$17.19</a></td>
+      <td></td>
+    </tr>
+    <tr property="tool" typeof="HowToTool" class="pa">
+      <td property="name">DC off/on power switch</td>
+      <td><img property="image" alt="DC off/on power switch" loading="lazy" src="DCpowerSwitch.jpg"></td>
+      <td typeof="Product"><a property="model" href="https://www.amazon.com.au/dp/B01FT4RBBM">‎$20.00</a></td>
+      <td typeof="Product"><a property="model" href="https://www.ebay.com.au/itm/397830075901">‎$28.01</a></td>
+      <td></td>
+    </tr>
+    <tr property="tool" typeof="HowToTool" class="pa">
+      <td property="name">YINETTECH USB-C to DC 5v-20v cable (12v for ZimaBlade)</td>
+      <td><img property="image" alt="YINETTECH USB-C DC 5v-20v Booster Power Supply" loading="lazy" src="https://web.archive.org/web/20241203112616id_/https://deconfiguration.glitch.me/CYD.svg#i01"></td>
+      <td typeof="Product"><a property="model" href="https://www.amazon.com.au/dp/B0DCZ8KWPM">‎$18.09</a></td>
+      <td typeof="Product"><a property="model" href="https://www.ebay.com.au/itm/317132107468">‎$14.07</a></td>
+      <td></td>
+    </tr>
+    <tr property="tool" typeof="HowToTool" class="pa">
+      <td property="name">LENCENT Power Board with 65W USB Fast Charger</td>
+      <td><img property="image" alt="LENCENT Power Board with 65W USB Fast Charger" loading="lazy" src="PowerAdapter65W.jpg"></td>
+      <td typeof="Product"><a property="model" href="https://www.amazon.com.au/dp/B0BN64Z5YD">‎$49.99</a></td>
+      <td typeof="Product"><a property="model" href="https://www.ebay.com.au/itm/366414761931">‎$69.99</a></td>
+      <td></td>
+    </tr>
+    <tr property="tool" typeof="HowToTool" class="pa">
+      <td property="name">Wired keyboard with 2 USB port hub</td>
+      <td><img property="image" alt="Wired keyboard with 2 USB port hub" loading="lazy" src="keyboard.jpg"></td>
+      <td typeof="Product"><a property="model" href="https://www.amazon.com.au/dp/B007LQN8UU">‎$44.99</a></td>
+      <td typeof="Product"><a property="model" href="https://www.ebay.com.au/itm/287299551804">‎$72.61</a></td>
+      <td></td>
+    </tr>
+    <tr property="tool" typeof="HowToTool" class="pa">
+      <td property="name">Wired USB mouse</td>
+      <td><img property="image" alt="Wired USB mouse" loading="lazy" src="mouse.jpg"></td>
+      <td typeof="Product"><a property="model" href="https://www.amazon.com.au/dp/B075YRYQR3">‎$8.85 </a></td>
+      <td typeof="Product"><a property="model" href="https://www.ebay.com.au/itm/377111722432">‎$28.99</a></td>
+      <td></td>
+    </tr>
+    <tr property="tool" typeof="HowToTool" class="pa">
+      <td property="name">Mini-DP to DP cable</td>
+      <td><img property="image" alt="Mini-DP to DP cable" loading="lazy" src="MiniDPcable.jpg"></td>
+      <td typeof="Product"><a property="model" href="https://www.amazon.com.au/dp/B004EUTP2G">‎$4.94</a></td>
+      <td typeof="Product"><a property="model" href="https://www.ebay.com.au/itm/264421754713">‎$6.12</a></td>
+      <td></td>
+    </tr>
+    <tr property="tool" typeof="HowToTool" class="pa">
+      <td property="name">Ethernet cable</td>
+      <td><img property="image" alt="Ethernet cable" loading="lazy" src="ethernet.jpg"></td>
+      <td typeof="Product"><a property="model" href="https://www.amazon.com.au/dp/B0B5ZVN548">‎$4.99</a></td>
+      <td typeof="Product"><a property="model" href="https://www.ebay.com.au/itm/324463755843">‎$6.95</a></td>
+      <td></td>
+    </tr>
+    <tr property="tool" typeof="HowToTool" class="pa">
+      <td property="name">Blancco RPD USB bootdrive</td>
+      <td><img property="image" alt="Blancco RPD USB bootdrive" loading="lazy" src="usbdrive.jpg"></td>
+      <td></td>
+      <td></td>
+      <td typeof="Product">Provided by WVtech</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr><th>Description</th><th>Photo</th><th>Amazon</th><th>eBay</th><th>Other</th>
+    </tr>
+  </tfoot>
+</table>
+	<h2>Adjustments to the ZimaBlade BIOS</h2>
+	<p>For the ZimaBlade to recognise CF cards, you initially must follow these steps:
+<ol>
+	<li>To access the BIOS continuously press the DEL key while powering on the ZimaBlade.</li>
+	<li>Navigate to the Chipset tab using the arrow keys.</li>
+	<li>Select South Cluster Configuration → PCI Express Configuration, ensure these options are set:
+		<ul><li>PCI Express Clock Gating: Disabled</li>
+		<li>Peer Memory Write Enable: Enabled</li>
+		<li>Open the PCI Express Root Port 3 submenu and apply these settings:
+			<ul>
+			<li>ASPM (Active State Power Management): Disabled</li>
+			<li>PCIe Speed: Force to Gen 1</li>
+			<li>Transmit Half Swing: Enabled</li>
+			</ul></li>
+		</ul></li>
+	<li>Navigate to the Advanced tab → CSM Configuration, change any UEFI values to LEGACY.</li>
+	<li>Navigate to the Save &amp; Exit tab, select Save Changes and Reset.</li>
+</ol>
+	<h2>Booting and operating Blancco</h2>
+<ol>	
+	<li>Plug the CF card from a device into the adapter you've connected to the ZimaBlade, ensuring the LED on it lights up when you turn the power on.</li>
+	<li>Plug in the Blancco RPD USB bootdrive into a free port (in the keyboard hub works for me) then continually press F11 while powering up to bring up the boot menu.</li>
+	<li>Select the non-UEFI USB option then Remove Freeze Lock to boot into Blancco.</li>
+	<li>When the interface comes up ensure the CF card is selected, and DESELECT the built-in drive that the ZimaBlade comes with.</li>
+	<li>Go to the Custom Fields tab and manually enter the order number and asset tag ID of the device from which you're erasing the CF card.</li>
+	<li>Return to the Erasure tab and proceed with the erasure, remembering when done to generate and send the report.</li>
+</body></html>
