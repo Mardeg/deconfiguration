@@ -51,8 +51,8 @@
 	<p>Until now we have been unable to use Blancco to erase (first gen) CF cards as they are in networking devices with no video output, so those cards have been destroyed. The problem this brings is that CF cards are no longer being manufactured so when we sell those devices without their CF cards our customers have trouble replacing them with whatever they can buy which is increasingly expensive as the remaining stockpile sellers have reduces and will eventually run out.</p>
 	<p>This page documents a setup to successfully erase CF cards using the existing Blancco RPD USB bootdrives we use for other storage media, providing the same erasure reports for Makor.</p>
 	<p>NOTE: The "Random Byte Overwrite (3x)" erasure method is the one which matches the ASD requirements for up to and including PROTECTED level, so that is what the steps below will set.</p>
-	<h2>Video of the setup in action</a></h2><a href="https://www.youtube.com/watch?v=5lwU9WeYaZ8" target="_blank" data-interception="off"><p>(Open&nbsp;this&nbsp;link&nbsp;in&nbsp;a&nbsp;new&nbsp;browser&nbsp;tab&nbsp;if&nbsp;the&nbsp;embed&nbsp;fails)</a></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5lwU9WeYaZ8?si=SQXpu0HCOoNhEvJn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	<h2>Video of assembling the setup and booting to Blancco</a></h2><a href="https://www.youtube.com/watch?v=9LRMSLi9QRc" target="_blank" data-interception="off"><p>(Open&nbsp;this&nbsp;link&nbsp;in&nbsp;a&nbsp;new&nbsp;browser&nbsp;tab&nbsp;if&nbsp;the&nbsp;embed&nbsp;fails)</a></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9LRMSLi9QRc?si=JUdbTwyCRvZErkqq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <h2>Materials needed for each warehouse</h2>
 	<p>The following table lists all the necessary materials (minus a monitor with a Display Port) to get this setup running. These items are what I have used but you can substitute some (towards the end) with matching items you already have on site.</p>
 <input id="tpa" type="checkbox">
@@ -198,7 +198,8 @@
 	<li>Plug the CF card from a device into the adapter you've connected to the ZimaBlade, ensuring the LED on it lights up when you turn the power on.</li>
 	<li>Plug in the Blancco RPD (Process: Manual) USB bootdrive into a free port (in the keyboard hub works for me) then continually press F11 while powering up to bring up the boot menu.</li>
 	<li>Select the non-UEFI USB option then Remove Freeze Lock to boot into Blancco.</li>
-	<li>When the Devices interface comes up ensure the CF card is selected, and DESELECT the built-in drive that the ZimaBlade comes with.</li>
+	<li>When the Devices interface comes up ensure the CF card is selected, and DESELECT the built-in Samsung (31.27 GB) drive that the ZimaBlade comes with.<br><a href="https://www.youtube.com/watch?v=2rOBiW9CFUg" target="_blank" data-interception="off">(Open&nbsp;this&nbsp;link&nbsp;in&nbsp;a&nbsp;new&nbsp;browser&nbsp;tab&nbsp;if&nbsp;the&nbsp;embed&nbsp;fails)</a><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2rOBiW9CFUg?si=zJvDyYDe1cH4diA4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></li>
 	<li>Click <span style="background-color:#FFF">⚙️</span> (CTRL+G) at the bottom to open the Erasure Settings dialog and navigate to the "In-process" tab.
 	<li>From the "Erasure standard" dropdown select "Random Byte Overwrite (3x)"</li>
 	<li>In that same dialog drag the "Verification level" slider up to 100%. This read back pass is vital for ASD compliance.</li>
